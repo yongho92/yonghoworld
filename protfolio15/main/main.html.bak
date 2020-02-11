@@ -1,0 +1,262 @@
+<?
+	function isMobile(){
+			$arr_browser = array ("iphone", "android", "ipod", "iemobile", "mobile", "lgtelecom", "ppc", "symbianos", "blackberry", "ipad");
+			$httpUserAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
+			// 기본값으로 모바일 브라우저가 아닌것으로 간주함
+			$mobile_browser = false;
+			// 모바일브라우저에 해당하는 문자열이 있는 경우 $mobile_browser 를 true로 설정
+			for($indexi = 0 ; $indexi < count($arr_browser) ; $indexi++){
+				if(strpos($httpUserAgent, $arr_browser[$indexi]) == true){
+					$mobile_browser = true;
+					break;
+				}
+			}
+			return $mobile_browser;
+			echo "ok";
+	}
+
+	function move_page($url, $second="0"){
+		echo"<meta http-equiv=\"refresh\" content=\"$second; url=$url\">";
+		exit;
+	}
+
+if(isMobile()) move_page("http://".$_SERVER['HTTP_HOST']."/m".$_SERVER["REQUEST_URI"]);
+?>
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> -->
+	<meta name="viewport" content="width=device-width, user-scalable=yes, target-densitydpi=device-dpi">
+	<meta name="format-detection" content="telephone=no">
+	<title>한국로슈</title>
+	<link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../common/js/fullpage307.js"></script>
+	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../common/js/main.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../common/js/script.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156255190-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	//gtag('config', 'UA-156255190-1');
+	gtag(	'config',
+			'UA-156255190-1',
+			{'linker':	{'domains':
+							[
+								'flu.or.kr',
+								'influenza.or.kr',
+								'influenza.co.kr',
+								'fighttheflu.co.kr',
+								'xn--2s2bp82c.com',
+								'xn--439a49l.com',
+								'xn--439a49l.net'
+							]
+						}
+			}
+	);
+</script>
+
+</head>
+<body class="main_a">
+	<header>
+		<div class="head">
+			<a href="#" class="menu">메뉴</a>
+			<h1><a href="../main/main.html"><img src="../images/common/logo.png" alt=""></a></h1>
+		</div>
+		<div class="menu_on">
+			<div class="menuD">
+				<div class="menuT">
+					<button type="button">닫기</button>
+					<ul>
+						<li><a href="../main/main.html">HOME</a></li>
+						<li><a href="../flu_info/flu_info.html">플루란 무엇인가요?</a></li>
+						<li><a href="../flu_info/flu_check.html">플루에 걸렸을까요?</a></li>
+						<li><a href="../flu_info/cure.html">예방과 치료</a></li>
+						<li><a href="../flu_info/important48.html">48시간이 중요해</a></li>
+						<li><a href="../flu_info/careful.html">더 조심해야할 사람</a></li>
+						<li><a href="../flu_info/truth.html">오해와 진실</a></li>
+						<li><a href="../flu_info/hsptl.html">가까운 병원찾기</a></li>
+					</ul>				
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nlag5ue8dn"></script>
+	<script type="text/javascript" src="../common/js/hsptl.js"></script>
+
+	<link rel="stylesheet" href="../common/css/main.css">
+	<section id="">
+		<article class="Allbox visual swiper-container section">
+			<div class="">
+				<div class="swiper-container visual">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide" style="background:url(../images/contents/img_visual01_1.png) no-repeat center center / cover;">
+							<div class="visual_txt">
+								<p>독감(플루) 바로 알기</p>
+								<dl>
+									<dt><span class="size">에스키모인</span>들은 <span class="g bg"><em><strong>플루</strong>(독감)</em>에 </span><span class="size">걸리지 않는다?</span></dt>
+									<dd>가장 추운 곳 중 하나인 북극지방, 그곳에서 사는 사람들이 <span>독감에 걸리는 비율이 실제 낮게 나타난다고 하는데요 </span>그 이유는 무엇일까요?</dd>
+								</dl>
+								<a href="../flu_info/flu_info.html" class="more">MORE</a>
+							</div>
+						</li>
+						<li class="swiper-slide" style="background:url(../images/contents/img_visual01_2.png) no-repeat center center / cover;">
+							<div class="visual_txt">
+								<dl>
+									<dt><span class="g bg"><em><strong>플루</strong>(독감)</em>에 걸렸는지</span> 의심되세요?</dt>
+									<dd>진짜 원인이 무엇인지 찾아보세요.</dd>
+								</dl>
+								<a href="../flu_info/flu_check.html" class="more">MORE</a>
+							</div>
+						</li>
+						<li class="swiper-slide" style="background:url(../images/contents/img_visual01_3.png) no-repeat center center / cover; cursor:pointer;" onclick="location.href='../flu_info/important48.html'">
+							<!--<div class="visual_txt">
+								<p>독감(플루) 바로 알기</p>
+								<dl>
+									<dt>에스키모인들은 <span><em><strong>플루</strong>(독감)</em>에 </span>걸리지 않는다?</dt>
+									<dd>가장 추운 곳 중 하나인 북극지방, 그곳에서 사는 사람들은 <span>오히려 독감에 걸리지 않는다고 하는데요. </span>그 이유는 무엇일까요?</dd>
+								</dl>
+								<a href="#" class="more">MORE</a>
+							</div>-->
+						</li>
+					</ul>	
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</article>
+		<article class="Allbox flu_list section">
+			<div class="Box2">
+				<div class="wrap">
+					<ul>
+						<li><a href="../flu_info/flu_info.html">플루란 무엇인가요?</a></li>
+						<li><a href="../flu_info/flu_check.html">플루에 걸렸을까요?</a></li>
+						<li><a href="../flu_info/cure.html">예방과 치료</a></li>
+						<li><a href="../flu_info/important48.html">48시간이 중요해</a></li>
+						<li><a href="../flu_info/careful.html">더 조심해야 할 사람</a></li>
+						<li><a href="../flu_info/truth.html">오해와 진실</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="Box2_1">
+				<div class="wrap">
+					<div class="mid">
+						<h2 class="title">영상을 통해 알아보는 <span>플루 (독감)</span></h2>
+						<dl>
+							<dt>플루 예방접종</dt>
+							<dd>플루 예방접종에 대한 자세한 내용을 <span>영상을 통해 알아보세요.</span></dd>
+						</dl>
+						<a href="#" class="more">MORE</a>						
+					</div>
+					<div class="mid viewlist">
+						<div class="view">
+							<iframe src="https://www.youtube.com/embed/OKyK2dw70Qo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videoV1" class="t_vdoOn vdoOn"></iframe>
+							<iframe src="https://www.youtube.com/embed/rSVIhJkhEN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videoV2" class="t_vdoOn"></iframe>
+							<iframe src="https://www.youtube.com/embed/_l8zZP672jQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videoV3" class="t_vdoOn"></iframe>
+						</div>
+						<ul>
+							<li data-tab="videoV1" class="vdoOn"><img src="../images/contents/video1.jpg" alt=""></li>
+							<li data-tab="videoV2"><img src="../images/contents/video2.jpg" alt=""></li>
+							<li data-tab="videoV3"><img src="../images/contents/video3.jpg" alt=""></li>
+						</ul>
+					</div>						
+				</div>
+			</div>
+		</article>
+		<article class="Allbox section pdtm1">
+			<div class="wrap">
+				<div class="f_check fchBox2">
+					<h2 class="title">플루(독감)를 의심해보세요</h2>
+					<div class="fuc_2">
+						<div class="leftB">
+							<p class="txt">플루에 걸렸을 때 <span>나타나는 초기 증상들은 아래와 같습니다.<span class="infot">1,2)</span> </span></p>
+							<ul class="i1">
+								<li>고열</li>
+								<li>기침</li>
+								<li>몸살</li>
+								<li>인후통</li>
+								<li>콧물, 코막힘</li>
+								<li>오한</li>
+								<li>피로감, 무력감</li>
+								<li>구토, 설사</li>
+								<li>두통</li>
+							</ul>
+							<p class="txt txt2">나타나는 증상은 개인차가 있으며 일부 증상만 나타나는 경우도 있습니다.<span class="infot">1)</span> </p>
+							<p class="txt txt2">플루와 감기는 증상이 매우 유사하지만 미열이 서서히 시작되는 감기와 달리 <span>플루는 고열이 갑자기 시작되며 두통, 피로감, 근육통 및 관절통 등 </span><strong>'심한 몸살'</strong> 같은 전신 증상이 뚜렷하여 <strong>일상생활이 어려울 정도</strong>로 나타납니다.<span class="infot">3)</span> </p>
+						</div>
+					</div>
+					<p class="txt txtrep">1) 질병관리본부. 2019-2020절기 인플루엔자 관리지침</p>
+					<p class="txt txtrep">2) Banning M. Influenza: incidence, symptoms and treatment, Br J Nurs 2005; 14(22); 1192-1197</p>
+					<p class="txt txtrep">3) 질병관리본부 국가건강정보포털 <a href="http://health.cdc.go.kr/health/HealthInfoArea/HealthInfo/View.do?idx=3980">http://health.cdc.go.kr/health/HealthInfoArea/HealthInfo/View.do?idx=3980</a> (Last accessed: Jan 2020)</p>
+				</div>
+			</div>
+		</article>
+		<article class="Allbox locationbx section pdtm1" id="locbx">
+			<div class="wrap">
+				<h2 class="title">가까운 병원찾기</h2>
+				<form>
+					<fieldset>
+						<select name="Q0" id="Q0" title="시/도" onchange="javascript:district(this.value);">
+							<option value="">시/도</option>
+							<option value="서울특별시" selected>서울특별시</option>
+							<option value="경기도">경기도</option>
+							<option value="강원도">강원도</option>
+							<option value="경상남도">경상남도</option>
+							<option value="경상북도">경상북도</option>
+							<option value="광주광역시">광주광역시</option>
+							<option value="대구광역시">대구광역시</option>
+							<option value="대전광역시">대전광역시</option>
+							<option value="부산광역시">부산광역시</option>
+							<option value="울산광역시">울산광역시</option>
+							<option value="인천광역시">인천광역시</option>
+							<option value="전라남도">전라남도</option>
+							<option value="전라북도">전라북도</option>
+							<option value="충청남도">충청남도</option>
+							<option value="충청북도">충청북도</option>
+							<option value="제주특별자치도">제주특별자치도</option>
+							<option value="세종특별자치시">세종특별자치시</option>
+						</select>
+						<select name="Q1" id="Q1">
+							<option value="">시/군/구</option>
+						</select>
+						<input type="text" name="QN" id="QN" placeholder="병원이름 검색어" />
+						<button type="button" class="btn_search">검색</button>
+						<img src="../images/common/loadPrg.gif" id="loadPrg" style="display:none;" />
+					</fieldset>
+				</form>
+				<div class="clear cont">
+					<div class="mapbx" id="mapDiv"></div>
+					<div class="loclist">
+						<ul></ul>
+					</div>
+					<p>정부에서 운영하고 있는 공공데이터 포털<a href="https://www.data.go.kr/">(https://www.data.go.kr/)</a>에서 불러온 정보로써,<span> 지도상에 노출되지 않는 병원에서도 플루의 진단과 치료가 가능할 수 있습니다.</span></p>
+				</div>
+			</div>
+		</article>
+	</section>	
+	<div class="mBg"></div>
+
+	<footer>
+		<div class="footer section fp-auto-height" id="section2">
+			<div class="wrap">
+				<div class="footC">
+				  <p>본 웹사이트는 인플루엔자(독감) 질환에 대한 올바른 정보 제공을 목적으로 ㈜한국로슈에서 제작하였습니다. <span>아시아태평양 인플루엔자 연구소에서 내용을 감수하였습니다.</span></p>
+				</div>				
+			</div>		
+		</div>
+	</footer>
+
+
+</body>
+</html>

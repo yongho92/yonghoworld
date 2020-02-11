@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>피에스텍(주)</title>
+  <link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/contents.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/stockinfo.css"/>
+  <script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../common/js/swiper.min.js"></script>
+  <script type="text/javascript" src="../common/js/common.js"></script>
+  <script type="text/javascript" src="../common/js/contents.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://asp1.krx.co.kr/inc/js/asp_chart.js"></script>
+  <script src="../common/js/jquery.rwdImageMaps.js"></script>
+ </head>
+ <body>
+  <div id="wrap">
+  	<div id="header">
+		<div class="head">
+			<h1><a href="../main/main.html"><img src="../images/common/logo.png" alt="pstec"/></a></h1>
+			<div class="menu">
+				<ul>
+					<li><a href="../intro/company.html">회사소개</a>
+						<ul>
+							<li><a href="../intro/company.html">회사개요</a></li>
+							<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+							<li><a href="../intro/subsidiary.html">관계사</a></li>
+							<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+							<li><a href="../intro/map.html">사업장소개</a></li>
+							<li><a href="../intro/jobnotice.html">채용정보</a></li>
+						</ul>
+					</li>
+					<li><a href="../business/measure.html">사업분야</a>
+						<ul>
+							<li><a href="../business/measure.html">계량계측사업</a></li>
+							<li><a href="../business/components.html">자동차부품사업</a></li>
+						</ul>					
+					</li>
+					<li><a href="../product/product.html">제품소개</a>
+						<ul>
+							<li><a href="../product/product_view.html">전력량계</a></li>
+							<li><a href="../product/product_view.html">설미미터</a></li>
+							<li><a href="../product/product_view.html">전기차충전기</a></li>
+							<li><a href="../product/product_view.html">기타제품</a></li>
+						</ul>						
+					</li>
+					<li><a href="../customer/notice.html">고객지원</a>
+						<ul>
+							<li><a href="../customer/notice.html">공지사항</a></li>
+							<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+							<li><a href="../customer/contact.html">부서별 연락처</a></li>
+						</ul>						
+					</li>
+					<li><a href="../information/ir.html">IR</a>
+						<ul>
+							<li><a href="../information/ir.html">IR 자료실</a></li>
+							<li><a href="../information/general.html">공시정보</a></li>
+							<li><a href="../information/stock.html">주가정보</a></li>
+							<li><a href="../information/finance.html">재무정보</a></li>
+						</ul>					
+					</li>
+				</ul>
+			</div>
+			<div class="lang">
+				<ul>
+					<li><a href="#" class="on">KOR</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>				
+			</div>
+			<div class="m_menu">
+				<button type="button" class="more">모바일메뉴보기</button>
+				<div class="m_gnb">
+					<div class="g_top">
+						<a href="#" class="on first">KOR</a>
+						<a href="#">ENG</a>
+						<button type="button">모바일메뉴닫기</button>
+					</div>
+					<div class="g_bot">
+						<ul>
+							<li><a href="javascript:void(0);" class="d2_tit">회사소개</a>
+								<ul class="depth2">
+									<li><a href="../intro/company.html">회사개요</a></li>
+									<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+									<li><a href="../intro/subsidiary.html">관계사</a></li>
+									<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+									<li><a href="../intro/map.html">사업장소개</a></li>
+									<li><a href="../intro/jobnotice.html">채용정보</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">사업분야</a>
+								<ul class="depth2">
+									<li><a href="../business/measure.html">계량계측사업</a></li>
+									<li><a href="../business/components.html">자동차부품사업</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">제품소개</a>
+								<ul class="depth2">
+									<li><a href="../product/product_view.html">전력량계</a></li>
+									<li><a href="../product/product_view.html">설미미터</a></li>
+									<li><a href="../product/product_view.html">전기차충전기</a></li>
+									<li><a href="../product/product_view.html">기타제품</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">고객지원</a>
+								<ul class="depth2">
+									<li><a href="../customer/notice.html">공지사항</a></li>
+									<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+									<li><a href="../customer/contact.html">부서별 연락처</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">IR</a>
+								<ul class="depth2">
+									<li><a href="../information/ir.html">IR 자료실</a></li>
+									<li><a href="../information/general.html">공시정보</a></li>
+									<li><a href="../information/stock.html">주가정보</a></li>
+									<li><a href="../information/finance.html">재무정보</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+	<div id="container" class="container">
+		<div class="s_title">
+			<p>회사소개</p>
+		</div>
+		<div class="loaction">
+			<div class="loac_box">
+				<ul>
+					<li class="home"><a href="../main/main.html">홈</a></li>
+					<li class="dep dep1">
+						<a href="javascript:;">회사소개</a>
+						<ul>
+							<li><a href="../intro/company.html">회사소개</a></li>
+							<li><a href="../business/measure.html">사업분야</a></li>
+							<li><a href="../product/product.html">제품소개</a></li>
+							<li><a href="../customer/notice.html">고객지원</a></li>
+							<li><a href="../information/ir.html">IR</a></li>
+						</ul>
+					</li>
+					<li class="dep dep2">
+						<a href="javascript:;">수상&amp;인증</a>
+						<ul>
+							<li><a href="../intro/company.html">회사개요</a></li>
+							<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+							<li><a href="../intro/subsidiary.html">관계사</a></li>
+							<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+							<li><a href="../intro/map.html">사업장소개</a></li>
+							<li><a href="../intro/jobnotice.html">채용정보</a></li>
+						</ul>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content cont_pdb100">
+			<div class="menu_tab">
+				<ul class="tab1">
+					<li><a href="awards.html" class="on">등록증</a></li>
+					<li><a href="awards2.html">수상 및 인증서</a></li>
+					<li><a href="awards3.html">형식승인서</a></li>
+				</ul>
+			</div>
+			<div class="ad_box">
+				<div class="ad_list">
+					<h4 class="sub_tit">등록증</h4>
+					<table>
+						<caption>등록증</caption>
+						<thead>
+							<tr>
+								<th>구분</th>
+								<th>내용</th>
+								<th>등록번호</th>
+								<th>등록일</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>  
+							<td>상표등록증</td>  
+							<td></td>  
+							<td>제 40-0793161 호</td>
+							<td>2009. 06. 24</td>
+						</tr> 
+						<tr>
+							<td>상표등록증</td>
+							<td></td>
+							<td>제 40-0793162 호</td>
+							<td>2009. 06. 24</td>									  
+						</tr>
+						<tr>
+							<td>의장등록증</td>
+							<td>전자식 전력량계량기</td>
+							<td>제 0301381 호</td>
+							<td>2002. 06. 18</td>
+						</tr>
+						<tr>
+							<td>의장등록증</td>
+							<td>전자식전력량계</td>
+							<td>제 0336420 호</td>
+							<td>2003. 10. 16</td>
+						</tr>
+						<tr>
+							<td>의장등록증</td>
+							<td>전자식전력량계</td>
+							<td>제 0359668 호</td>
+							<td>2004. 08. 11</td>
+						  
+						</tr>
+						<tr>
+							<td>의장등록증</td>
+							<td>전력량계용 전류 검출기</td>
+							<td>제 0370420 호</td>
+							<td>2004. 12. 15</td>
+						</tr>
+						<tr>
+							<td>유사의장등록증</td>
+							<td>전자식전력량계</td>
+							<td>제 0336420 호의 유사 제01호</td>
+							<td>2003. 12. 30</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전자식전력량계</td>
+							<td>제 0451307 호</td>
+							<td>2004. 09. 22</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>지능형 전자식전력량계의 네트워크 시스템</td>
+							<td>제 10-0602011 호</td>
+							<td>2006. 07. 10</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전자식 소전류 제한기</td>
+							<td>제 10-0613202 호</td>
+							<td>2006. 08.09</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>원격검침용 전자식전력량계의 전원제어회로</td>
+							<td>제 10-0671316 호</td>
+							<td>2007. 01.12</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전력량 측정 및 표시 기능을 갖는 콘센트</td>
+							<td>제 10-0755451 호</td>
+							<td>2007. 08.29</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전기식 및 전자식 겸용 전압전류 검출장치</td>
+							<td>제 10-0765344 호</td>
+							<td>2007. 10. 02</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전자식 전력 수급용 계기용 변성기</td>
+							<td>제 10-0792484 호</td>
+							<td>2008. 01. 02</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전자식전력량계 시간보정장치</td>
+							<td>제 10-0869072 호</td>
+							<td>2008. 11. 11</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전기에너지 자동절감 모니터링장치</td>
+							<td>제 10-1008352 호</td>
+							<td>2011. 01. 07</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>부하제어 장애이벤트 기능을 내장한 광센서를 이용한 전력량계</td>
+							<td>제 10-1169636 호</td>
+							<td>2012. 07. 24</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>광센서를 이용한 전자식 수도미터</td>
+							<td>제 10-1170986 호</td>
+							<td>2012. 07. 30</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전자식 금형카운터 장치</td>
+							<td>제 10-1183283 호</td>
+							<td>2012. 09. 10</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>계량기의 전자봉인 시스템</td>
+							<td>제 10-1221105 호</td>
+							<td>2013. 01. 04</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>프리셋 및 자동설정 기능을 구비한 금형관리 시스템</td>
+							<td>제 10-1234355 호</td>
+							<td>2013. 02. 07</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>통신장애 자동복구 기능을 내장한 전자식전력량계</td>
+							<td>제 10-1260788 호</td>
+							<td>2013. 04. 29</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>지능형 멀티 충전 시스템</td>
+							<td>제 10-1505744 호</td>
+							<td>2015. 03. 18</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>멀티 충전기 운영 시스템</td>
+							<td>제 10-1512899 호</td>
+							<td>2015. 04. 10</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>다세대용 전력량계의 고정구조</td>
+							<td>제 10-1548177 호</td>
+							<td>2015. 08. 24</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>주상변압기 배전선로의 전압전류 측정용 프로브</td>
+							<td>제 10-1548178 호</td>
+							<td>2015. 08. 24</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전자식전력량계</td>
+							<td>제 10-1683024 호</td>
+							<td>2016. 11. 30</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>전방향성 전력량계 시스템</td>
+							<td>제 10-1715815 호</td>
+							<td>2017. 03. 07</td>
+						</tr>
+						<tr>
+							<td>특허증</td>
+							<td>다채널 전력량계</td>
+							<td>제 10-1830895 호</td>
+							<td>2018. 02. 13</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>전력량계</td>
+							<td>제 30-0429198 호</td>
+							<td>2006. 10. 24</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>전력량계</td>
+							<td>제 30-0429187 호</td>
+							<td>2006. 10. 24</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>계기용 변성기</td>
+							<td>제 30-0451456 호</td>
+							<td>2007. 05. 30</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>적산열량계의 온도센서용 연결캡</td>
+							<td>제 30-0754256 호</td>
+							<td>2014. 07. 22</td>
+						</tr>
+						<tr>									  
+							<td>디자인등록증</td>
+							<td>적산열량계의 온도센서용 포켓</td>
+							<td>제 30-0754259 호</td>
+							<td>2014. 07. 22</td>									  
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>적산전력량계 모뎀접속부용 접속단자블록</td>
+							<td>제 30-0758088 호</td>
+							<td>2014. 08. 19</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>배전선로의 전압전류 측정용 프로브</td>
+							<td>제 30-0772429 호</td>
+							<td>2014. 11. 18</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>전기차충전기</td>
+							<td>제 30-0794991 호</td>
+							<td>2015. 04. 28</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>적산열량계의 온도센서용 연결캡</td>
+							<td>제 30-0800071 호</td>
+							<td>2015. 06. 03</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>수도미터용 시동침</td>
+							<td>제 30-0854132 호</td>
+							<td>2016. 05. 10</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>수도미터용 시동침</td>
+							<td>제 30-0854133 호</td>
+							<td>2016. 05. 10</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>전자식 전력량계</td>
+							<td>제 30-0905674 호</td>
+							<td>2017. 05. 01</td>
+						</tr>
+						<tr>
+							<td>디자인등록증</td>
+							<td>디지털 점검용 가스미터</td>
+							<td>제 30-0905830 호</td>
+							<td>2017. 05. 02</td>
+						</tr>
+						<tr>
+							<td>실용신안등록증</td>
+							<td>전자식전력량계용 전류 검출기</td>
+							<td>제 0353264 호</td>
+							<td>2004. 06. 03</td>
+						</tr>
+						<tr>
+							<td>실용신안등록증</td>
+							<td>원격검침용 일체형 전자식전력량계</td>
+							<td>제 0356997 호</td>
+							<td>2004. 07. 12</td>
+						</tr>
+						<tr>
+							<td>실용신안등록증</td>
+							<td>소전류 제한기</td>
+							<td>제 0366974 호</td>
+							<td>2004. 10. 28</td>
+						</tr>
+						<tr>
+							<td>실용신안등록증</td>
+							<td>통신케이블 취부 단자함을 구비한 전자식전력량계</td>
+							<td>제 20-0415830 호</td>
+							<td>2006. 05. 01</td>
+						</tr>
+						<tr>
+							<td>실용신안등록증</td>
+							<td>신호선을 이용하여 전원을 공급하는 원격검침시스템</td>
+							<td>제 20-0278812 호</td>
+							<td>2009. 02. 25</td>
+						</tr>
+						<tr>
+							<td>실용신안등록증</td>
+							<td>전자식전력량계의 PLC모뎀 접속수단</td>
+							<td>제 20-0475133 호</td>
+							<td>2014. 11 .03</td>
+						</tr>
+						<tr>
+							<td>실용신안등록증</td>
+							<td>난방수 관에 적산열량계용 온도센서의 연결장치</td>
+							<td>제 20-0477082 호</td>
+							<td>2015. 04 .28</td>
+						</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="page_Btn page_Btn2">
+			<ul class="quick quick2">
+				<li class="on top"><a href="">top</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="foot_box foot_box2">
+		<div id="footer">
+			<div class="foot">
+				<p class="f_logo">피에스텍(주)</p>
+				<div class="addr">
+					<ul>
+						<li>
+							<p>본<em>사</em> : 서울특별시 성동구 왕십리로 46(성수동1가)</p>
+							<p>TEL : 02-3408-1700</p>
+							<p>FAX : 02-499-0624</p>
+						</li>
+						<li>
+							<p>김포사업장 : 경기도 김포시 양촌읍 황금3로7번길 80</p>
+							<p>TEL : 031-988-2661</p>
+							<p>FAX : 031-988-2656</p>
+						</li>
+						<li>
+							<p>광천사업장 : 충청남도 홍성군 광천읍 광천로430번길 41-113</p>
+							<p>TEL : 041-642-7822</p>
+							<p>FAX : 041-642-2658</p>
+						</li>
+						<li>
+							<p>나주사업장 : 전라남도 나주시 왕곡면 혁신산단7길 31-7</p>
+							<p>TEL : 061-817-0505</p>
+							<p>FAX : 061-817-0506</p>
+						</li>
+					</ul>
+					<p class="mob_add">서울특별시 성동구 왕십리로 46(성수동1가)<span>TEL.02-3408-1700 FAX.02-499-0624</span></p>
+				</div>
+				<div class="family">
+					<button type="button">FAMILY SITE</button>
+					<ul>
+						<li><a href="#">피에스텍(주)</a></li>
+						<li><a href="#">서평택탱크터미널(주)</a></li>
+						<li><a href="#">대정장학재단</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="copy">
+			<p>&copy;2019. POONSUNG  ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>

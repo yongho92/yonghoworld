@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>MYCELEB</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<script type="text/javascript" src="../common/js/jquery-3.3.0.min.js"></script>
+	<script type="text/javascript" src="../common/js/script.js"></script>
+	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+</head>
+<body>	
+
+	<header>
+		<div class="head">
+			<h1><a href="../main/main.html"><img src="../images/common/logo_s.png" alt="myceleb"></a></h1>
+			<ul>
+				<li class="mBtn"><a href="#"><img src="../images/common/menu_s.png" alt="메뉴펼치기"></a></li>
+			</ul>
+			<div class="menuBox">
+	<button type="button">닫기</button>
+	<ul>
+		<li><a href="#"><span>셀럽리스트</span></a>
+			<ul>
+				<li><a href="../celebList/list.html">셀럽리스트</a></li>
+				<li><a href="../celebList/list_view.html">셀럽리스트 상세페이지</a></li>
+				<li><a href="../celebList/video.html">영상요청</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>회원가입(사용자)</span></a>
+			<ul>
+				<li><a href="../join/user_join.html">회원가입 1단계</a></li>
+				<li><a href="../join/user_join2.html">회원가입 2단계</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>회원가입(셀럽)</span></a>
+			<ul>
+				<li><a href="../join/celeb_join5.html">셀럽 회원가입 1단계</a></li>
+				<li><a href="../join/celeb_join4.html">셀럽 회원가입 2단계</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>마이페이지</span></a>
+			<ul>
+				<li><a href="../mypage/mypage.html">마이페이지</a></li>
+				<li><a href="../mypage/share_link.html">공유링크</a></li>
+				<li><a href="../mypage/reservation.html">예약리스트</a></li>
+				<li><a href="../mypage/reservation_view.html">예약리스트 상세페이지</a></li>
+				<li><a href="../mypage/welcome_video.html">프로필 & 계정관리</a></li>
+				<li><a href="../mypage/proceeds.html">수익금관리</a></li>
+				<li><a href="../mypage/invite_program.html">초대프로그램</a></li>
+				<li><a href="../mypage/mypage_general.html">일반 사용자 마이페이지</a></li>
+				<li><a href="../mypage/general_view.html">일반 사용자 상세페이지(별점주기)</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>고객센터</span></a>
+			<ul>
+				<li><a href="../mypage/faq.html">FAQ</a></li>
+				<li><a href="../mypage/contact.html">고객문의</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>로그인</span></a>
+			<ul>
+				<li><a href="../join/login.html">로그인</a></li>
+				<li><a href="../join/pw.html">비밀번호 찾기</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>	
+		</div>
+	</header>
+	<section class="">
+		<article class="celebS celebS2">
+			<div class="wrap">
+				<form name="Clistipt" method="post" action="">
+					<div class="cs">
+						<label for="c_search" class="clearN">이름 검색</label>
+						<input type="text" id="c_search" name="c_search" placeholder="이름 또는 닉네임 검색"/>
+						<button type="button">검색</button>
+						<div class="s_popup">
+							<p>찾는 스타가 보이지 않나요?</p>
+							<button type="button" class="closeP">닫기</button>
+							<button type="button" class="nextB">스타 등록요청 하고 알림 받기!</button>
+						</div>
+						<div class="s_popup2">
+							<h4>찾는 스타가 있다면 요청을 남겨<span>주세요. 등록되면 가장 먼저</span> 알려 드려요!</h4>
+							<button type="button" class="closeP">닫기</button>
+							<form name="fIpt" method="post" action="">
+								<div class="video_t">
+									<div class="iptBox">
+										<h3 class="stitle">셀럽 이름</h3>
+										<label for="name" class="clearN">셀럽 이름</label>
+										<input type="text" id="name" name="name" placeholder="이름, 호칭, 별명, 팀명 등">
+									</div>
+									<div class="iptBox">
+										<h3 class="stitle">당신의 이메일</h3>
+										<label for="email" class="clearN">당신의 이메일</label>
+										<input type="text" id="email" name="email" placeholder="yourname@example.com">
+									</div>
+								</div>
+								<a href="#" class="vBtn">확인</a>
+							</form>
+						</div>
+						<div class="s_popup2 s_popup3">
+							<p>요청이 완료되었습니다.</p>
+							<button type="button" class="closeP">닫기</button>
+							<dl>
+								<dt>스타 등록 이벤트!</dt>
+								<dd>직접 스타를 찾아서 마이셀럽에 등록<span>시켜 주시면 스타의 <strong>1년동안</strong>의 수익의</span> <strong>15%</strong>를 지급 해드려요!</dd>
+							</dl>
+							<a href="#">이벤트 자세히 보기</a>
+						</div>
+					</div>
+				</form>
+				<div class="Bg"></div>
+				<div class="c_list">
+					<ul>
+						<li><a href="#" class="on">전체(2160)</a></li>
+						<li><a href="#">패션(60)</a></li>
+						<li><a href="#">메이크업(120)</a></li>
+						<li><a href="#">일상(100)</a></li>
+						<li><a href="#">먹방(100)</a></li>
+						<li><a href="#">먹방(100)</a></li>
+						<li><a href="#">먹방(100)</a></li>
+					</ul>						
+				</div>
+			</div>
+		</article>
+		<article class="pupc">
+			<div class="wrap">
+				<div>
+					<button type="button" class="listBtn">추천순</button>
+					<ul class="celebL">
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc1.png" alt="">
+								<span>YOUTUBER</span>
+								<p>도로시</p>
+							</a>
+						</li>
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc2_2.png" alt="">
+								<span>YOUTUBER</span>
+								<p>헤이지니</p>
+							</a>
+						</li>
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc3.png" alt="">
+								<span>INSTAGRAMER</span>
+								<p>김승수</p>
+							</a>
+						</li>
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc4.png" alt="">
+								<span>YOUTUBER</span>
+								<p>도로시</p>
+							</a>
+						</li>
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc5.png" alt="">
+								<span>YOUTUBER</span>
+								<p>MJ</p>
+							</a>
+						</li>
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc6.png" alt="">
+								<span>INSTAGRAMER</span>
+								<p>클로에</p>
+							</a>
+						</li>
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc7.png" alt="">
+								<span>INSTAGRAMER</span>
+								<p>김정문</p>
+							</a>
+						</li>
+						<li>
+							<a href="list_view.html">
+								<img src="../images/contents/pupc8.png" alt="">
+								<span>YOUTUBER</span>
+								<p>도로시</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<footer>
+		<div class="wrap">
+			<div class="right">
+				<p>새로운 소식을 받아보세요!</p>
+				<p>새로운 스타들의 등록 알림을 받아보세요. </p>
+				<label for="" class="clearN">이메일</label>
+				<input type="text" id="email" name="email" placeholder="이메일을 입력하세요"/>
+				<button type="button">입력</button>
+			</div>
+			<div class="left">
+				<a href="#" class="star">스타등록</a>
+				<a href="#" class="btn">로그인</a>
+				<a href="#" class="btn">PC화면</a>
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+				<p>Copyright (C) 2019 <span>MYCELEB</span> All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>피에스텍(주)</title>
+  <link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/contents.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/stockinfo.css"/>
+  <script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../common/js/swiper.min.js"></script>
+  <script type="text/javascript" src="../common/js/common.js"></script>
+  <script type="text/javascript" src="../common/js/contents.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://asp1.krx.co.kr/inc/js/asp_chart.js"></script>
+  <script src="../common/js/jquery.rwdImageMaps.js"></script>
+ </head>
+ <body>
+  <div id="wrap">
+  	<div id="header">
+		<div class="head">
+			<h1><a href="../main/main.html"><img src="../images/common/logo.png" alt="pstec"/></a></h1>
+			<div class="menu">
+				<ul>
+					<li><a href="../intro/company.html">회사소개</a>
+						<ul>
+							<li><a href="../intro/company.html">회사개요</a></li>
+							<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+							<li><a href="../intro/subsidiary.html">관계사</a></li>
+							<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+							<li><a href="../intro/map.html">사업장소개</a></li>
+							<li><a href="../intro/jobnotice.html">채용정보</a></li>
+						</ul>
+					</li>
+					<li><a href="../business/measure.html">사업분야</a>
+						<ul>
+							<li><a href="../business/measure.html">계량계측사업</a></li>
+							<li><a href="../business/components.html">자동차부품사업</a></li>
+						</ul>					
+					</li>
+					<li><a href="../product/product.html">제품소개</a>
+						<ul>
+							<li><a href="../product/product_view.html">전력량계</a></li>
+							<li><a href="../product/product_view.html">설미미터</a></li>
+							<li><a href="../product/product_view.html">전기차충전기</a></li>
+							<li><a href="../product/product_view.html">기타제품</a></li>
+						</ul>						
+					</li>
+					<li><a href="../customer/notice.html">고객지원</a>
+						<ul>
+							<li><a href="../customer/notice.html">공지사항</a></li>
+							<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+							<li><a href="../customer/contact.html">부서별 연락처</a></li>
+						</ul>						
+					</li>
+					<li><a href="../information/ir.html">IR</a>
+						<ul>
+							<li><a href="../information/ir.html">IR 자료실</a></li>
+							<li><a href="../information/general.html">공시정보</a></li>
+							<li><a href="../information/stock.html">주가정보</a></li>
+							<li><a href="../information/finance.html">재무정보</a></li>
+						</ul>					
+					</li>
+				</ul>
+			</div>
+			<div class="lang">
+				<ul>
+					<li><a href="#" class="on">KOR</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>				
+			</div>
+			<div class="m_menu">
+				<button type="button" class="more">모바일메뉴보기</button>
+				<div class="m_gnb">
+					<div class="g_top">
+						<a href="#" class="on first">KOR</a>
+						<a href="#">ENG</a>
+						<button type="button">모바일메뉴닫기</button>
+					</div>
+					<div class="g_bot">
+						<ul>
+							<li><a href="javascript:void(0);" class="d2_tit">회사소개</a>
+								<ul class="depth2">
+									<li><a href="../intro/company.html">회사개요</a></li>
+									<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+									<li><a href="../intro/subsidiary.html">관계사</a></li>
+									<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+									<li><a href="../intro/map.html">사업장소개</a></li>
+									<li><a href="../intro/jobnotice.html">채용정보</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">사업분야</a>
+								<ul class="depth2">
+									<li><a href="../business/measure.html">계량계측사업</a></li>
+									<li><a href="../business/components.html">자동차부품사업</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">제품소개</a>
+								<ul class="depth2">
+									<li><a href="../product/product_view.html">전력량계</a></li>
+									<li><a href="../product/product_view.html">설미미터</a></li>
+									<li><a href="../product/product_view.html">전기차충전기</a></li>
+									<li><a href="../product/product_view.html">기타제품</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">고객지원</a>
+								<ul class="depth2">
+									<li><a href="../customer/notice.html">공지사항</a></li>
+									<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+									<li><a href="../customer/contact.html">부서별 연락처</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">IR</a>
+								<ul class="depth2">
+									<li><a href="../information/ir.html">IR 자료실</a></li>
+									<li><a href="../information/general.html">공시정보</a></li>
+									<li><a href="../information/stock.html">주가정보</a></li>
+									<li><a href="../information/finance.html">재무정보</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+	<div id="container" class="container">
+		<div class="s_title s_title6">
+			<p>IR</p>
+		</div>
+		<div class="loaction">
+			<div class="loac_box">
+				<ul>
+					<li class="home"><a href="../main/main.html">홈</a></li>
+					<li class="dep dep1">
+						<a href="javascript:;">IR</a>
+						<ul>
+							<li><a href="../intro/company.html">회사소개</a></li>
+							<li><a href="../business/measure.html">사업분야</a></li>
+							<li><a href="../product/product.html">제품소개</a></li>
+							<li><a href="../customer/notice.html">고객지원</a></li>
+							<li><a href="../information/ir.html">IR</a></li>
+						</ul>
+					</li>
+					<li class="dep dep2">
+						<a href="javascript:;">재무정보</a>
+						<ul>
+							<li><a href="../information/ir.html">IR 자료실</a></li>
+							<li><a href="../information/general.html">공시정보</a></li>
+							<li><a href="../information/stock.html">주가정보</a></li>
+							<li><a href="../information/finance.html">재무정보</a></li>
+						</ul>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<link rel='stylesheet' href='../common/css/Nwagon.css' type='text/css'>
+		<script src='../common/js/Nwagon.js'></script>
+		<div class="certification ir_com" >
+			<h4 class="sub_tit">매출현황</h4>
+			<div class="chart_txt content">
+				<dl>
+					<dt>매출현황</dt>
+					<dd>- 반세기 이상의 역사를 바탕으로 동종업계 최고의 재무안정성 및 제품 신뢰성을 유지하면서 실질적인 무차입 경영을 통해 RISK 제로 경영 기반을 구축하고 있습니다.</dd>
+					<dd>- 수익성, 고부가가치 사업 위주로 사업 구조를 재편 중이며 당사의 주력사업부분인 전력량계 사업 부분은 지속적인 성장세를 구현하고 있습니다.</dd>
+				</dl>
+			</div>
+			<div class="chart_box">
+				<div id="chart17" class="chart content">
+					<div class="name">
+						<p>계량계측사업부문</p>
+						<p>자동차부품사업부문</p>
+					</div>
+				</div>
+			</div>
+			<script>
+				var options = {
+					'legend':{
+						names: ['2014년', '2015년', '2016년', '2017년', '2018년'],
+						hrefs: []
+							},
+					'dataset':{
+						title:'Playing time per day', 
+						values: [[334,91], [465,96], [421,86], [640,68], [553,63] ],
+						colorset: ['#ff6d4b','#ffad37'],
+						fields:['계량계측사업부문', '자동차부품사업부문'],
+						widths:'49',
+
+						},
+					'bar': {
+						groupWidth: 20
+						},		
+					'chartDiv' : 'chart17',
+					'chartType' : 'stacked_column',
+					'chartSize' : {width:1100, height:430},
+					'maxValue' : 700,
+					'increment' : 100,
+				};
+
+				Nwagon.chart(options);
+
+				$('.columns rect').attr('width','49');
+				$('.labels text').attr({
+					transform:'translateY(20px)',
+					y:'30'
+					});
+
+			</script>
+			<div class="content cont_pdb100">
+				<table>
+					<thead>
+						<tr>  
+							<th class="l_tit">구분</th>  
+							<th class="l_tit">2014년</th>
+							<th class="l_tit">2015년</th>
+							<th class="l_tit">2016년</th>
+							<th class="l_tit">2017년</th>
+							<th class="last l_tit">2018년</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>  
+						<td class="l_tit2">계량계측사업부문</td>  
+						<td>334억</td>
+						<td>465억</td>
+						<td>421억</td>
+						<td>640억</td>
+						<td class="last">553억</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">자동차부품사업부문</td>  
+						<td>91억</td>
+						<td>96억</td>
+						<td>86억</td>
+						<td>68억</td>
+						<td class="last">63억</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">계</td>
+						<td><strong>425억</strong></td>
+						<td><strong>561억</strong></td>
+						<td><strong>507억</strong></td>
+						<td><strong>708억</strong></td>
+						<td class="last"><strong>616억</strong></td>
+					</tr> 
+					</tbody>
+				</table>
+				<h5>재무구조</h5>
+				<p class="txt_cnt">(단위 : 백만원)</p>
+				<table>
+					<thead>
+						<tr>  
+							<th class="l_tit">구분</th>  
+							<th class="l_tit">2014년</th>
+							<th class="l_tit">2015년</th>
+							<th class="l_tit">2016년</th>
+							<th class="l_tit">2017년</th>
+							<th class="last l_tit">2018년</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>  
+						<td class="l_tit2">자산</td>  
+						<td>116,376</td>
+						<td>136,712</td>
+						<td>144,884</td>
+						<td>157,509</td>
+						<td class="last">163,770 </td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">매출</td>  
+						<td>42,532</td>
+						<td>56,079</td>
+						<td>50,708</td>
+						<td>70,834</td>
+						<td class="last">61,651</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">영업이익<br>(영업이익율)</td>  
+						<td>4,954<br>(11.65%)</td>
+						<td>9,533<br>(17.00%)</td>
+						<td>5,050<br>(9.96%)</td>
+						<td>8,710<br>(12.30%)</td>
+						<td class="last">-846<br>(-1.37%)</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">당기순이익</td>  
+						<td>4,314</td>
+						<td>9,267</td>
+						<td>4,522</td>
+						<td>8,973</td>
+						<td class="last">1,919</td>
+					</tr>
+					<tr>  
+						<td class="l_tit2">자기자본이익율(ROE)</td>  
+						<td>3.66%</td>
+						<td>14.63%</td>
+						<td>3.52%</td>
+						<td>6.60%</td>
+						<td class="last">1.35%</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">총자산이익율(ROA)</td>  
+						<td>3.41%</td>
+						<td>13.56%</td>
+						<td>3.21%</td>
+						<td>5.93%</td>
+						<td class="last">1.17%</td>
+					</tr>
+					<tr>  
+						<td class="l_tit2">내부유보율</td>  
+						<td>1,285</td>
+						<td>1,262</td>
+						<td>1,300</td>
+						<td>1,346</td>
+						<td class="last">1,362</td>
+					</tr>
+					</tbody>
+				</table>
+
+				<h5>요약재무상태표</h5>
+				<p class="txt_cnt">(단위 : 백만원)</p>
+				<table>
+					<thead>
+						<tr>  
+							<th class="l_tit">구분</th>  
+							<th class="l_tit">2014년</th>
+							<th class="l_tit">2015년</th>
+							<th class="l_tit">2016년</th>
+							<th class="l_tit">2017년</th>
+							<th class="last l_tit">2018년</th>
+						</tr> 
+					</thead>
+					<tbody>
+					<tr>  
+						<td class="l_tit2">유동자산</td>  
+						<td class="last2">91,576</td>
+						<td class="last2">107,857</td>
+						<td class="last2">97,889</td>
+						<td class="last2">106,628</td>
+						<td class="last2">107,713</td>
+
+					</tr> 
+					<tr>  
+						<td class="l_tit2">비유동자산</td>  
+						<td class="last2">19,879</td>
+						<td class="last2">28,855</td>
+						<td class="last2">46,995</td>
+						<td class="last2">50,881</td>
+						<td class="last2">56,056</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">자산총계</td>  
+						<td class="last2">116,376</td>
+						<td class="last2">136,712</td>
+						<td class="last2">144,884</td>
+						<td class="last2">157,509</td>
+						<td class="last2">163,770 </td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">유동부채</td>  
+						<td class="last2">7,040</td>
+						<td class="last2">6,937</td>
+						<td class="last2">7,267</td>
+						<td class="last2">8,359</td>
+						<td class="last2">6,840</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">비유동부채</td>  
+						<td class="last2">414</td>
+						<td class="last2">3,098</td>
+						<td class="last2">7,349</td>
+						<td class="last2">7,578</td>
+						<td class="last2">14,258</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">부채총계</td>  
+						<td class="last2">7,454</td>
+						<td class="last2">10,036</td>
+						<td class="last2">14,616</td>
+						<td class="last2">15,936</td>
+						<td class="last2">21,099</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">자본금</td>  
+						<td class="last2">7,943</td>
+						<td class="last2">9,378</td>
+						<td class="last2">9,378</td>
+						<td class="last2">9,835</td>
+						<td class="last2">9,835</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">자본총계</td>  
+						<td class="last2">108,922</td>
+						<td class="last2">126,677</td>
+						<td class="last2">130,269</td>
+						<td class="last2">141,573</td>
+						<td class="last2">142,670</td>
+					</tr> 
+					</tbody>
+				</table>
+
+				<h5>요약손익계산서</h5>
+				<p class="txt_cnt">(단위 : 백만원)</p>
+				<table>
+					<thead>
+						<tr>  
+							<th class="l_tit">구분</th>  
+							<th class="l_tit">2014년</th>
+							<th class="l_tit">2015년</th>
+							<th class="l_tit">2016년</th>
+							<th class="l_tit">2017년</th>
+							<th class="last l_tit">2018년</th>
+						</tr> 
+					</thead>
+					<tbody>
+					<tr>  
+						<td class="l_tit2">매출액</td>  
+						<td class="last2">42,532</td>
+						<td class="last2">56,079</td>
+						<td class="last2">50,708</td>
+						<td class="last2">70,834</td>
+						<td class="last2">61,651</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">매출원가</td>  
+						<td class="last2">33,247</td>
+						<td class="last2">41,909</td>
+						<td class="last2">40,656</td>
+						<td class="last2">56,449</td>
+						<td class="last2">50,358</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">매출이익</td>  
+						<td class="last2">9,285</td>
+						<td class="last2">14,170</td>
+						<td class="last2">10,052</td>
+						<td class="last2">14,385</td>
+						<td class="last2">11,293</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">판매비와관리비</td>  
+						<td class="last2">4,330</td>
+						<td class="last2">4,637</td>
+						<td class="last2">5,002</td>
+						<td class="last2">5,674</td>
+						<td class="last2">12,139</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">영업이익</td>  
+						<td class="last2">4,954</td>
+						<td class="last2">9,533</td>
+						<td class="last2">5,050</td>
+						<td class="last2">8,710</td>
+						<td class="last2">-846</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">법인세비용차감전순이익</td>  
+						<td class="last2">4,776</td>
+						<td class="last2">11,756</td>
+						<td class="last2">5,589</td>
+						<td class="last2">11,278</td>
+						<td class="last2">2,151</td>
+					</tr> 
+					<tr>  
+						<td class="l_tit2">당기순이익</td>  
+						<td class="last2">4,314</td>
+						<td class="last2">9,267</td>
+						<td class="last2">4,522</td>
+						<td class="last2">8,973</td>
+						<td class="last2">1,919</td>
+					</tr> 
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="page_Btn page_Btn2">
+			<ul class="quick quick2">
+				<li class="on top"><a href="">top</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="foot_box foot_box2">
+		<div id="footer">
+			<div class="foot">
+				<p class="f_logo">피에스텍(주)</p>
+				<div class="addr">
+					<ul>
+						<li>
+							<p>본<em>사</em> : 서울특별시 성동구 왕십리로 46(성수동1가)</p>
+							<p>TEL : 02-3408-1700</p>
+							<p>FAX : 02-499-0624</p>
+						</li>
+						<li>
+							<p>김포사업장 : 경기도 김포시 양촌읍 황금3로7번길 80</p>
+							<p>TEL : 031-988-2661</p>
+							<p>FAX : 031-988-2656</p>
+						</li>
+						<li>
+							<p>광천사업장 : 충청남도 홍성군 광천읍 광천로430번길 41-113</p>
+							<p>TEL : 041-642-7822</p>
+							<p>FAX : 041-642-2658</p>
+						</li>
+						<li>
+							<p>나주사업장 : 전라남도 나주시 왕곡면 혁신산단7길 31-7</p>
+							<p>TEL : 061-817-0505</p>
+							<p>FAX : 061-817-0506</p>
+						</li>
+					</ul>
+					<p class="mob_add">서울특별시 성동구 왕십리로 46(성수동1가)<span>TEL.02-3408-1700 FAX.02-499-0624</span></p>
+				</div>
+				<div class="family">
+					<button type="button">FAMILY SITE</button>
+					<ul>
+						<li><a href="#">피에스텍(주)</a></li>
+						<li><a href="#">서평택탱크터미널(주)</a></li>
+						<li><a href="#">대정장학재단</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="copy">
+			<p>&copy;2019. POONSUNG  ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>

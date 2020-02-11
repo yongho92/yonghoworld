@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>피에스텍(주)</title>
+  <link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/contents.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/stockinfo.css"/>
+  <script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../common/js/swiper.min.js"></script>
+  <script type="text/javascript" src="../common/js/common.js"></script>
+  <script type="text/javascript" src="../common/js/contents.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://asp1.krx.co.kr/inc/js/asp_chart.js"></script>
+  <script src="../common/js/jquery.rwdImageMaps.js"></script>
+ </head>
+ <body>
+  <div id="wrap">
+  	<div id="header">
+		<div class="head">
+			<h1><a href="../main/main.html"><img src="../images/common/logo.png" alt="pstec"/></a></h1>
+			<div class="menu">
+				<ul>
+					<li><a href="../intro/company.html">회사소개</a>
+						<ul>
+							<li><a href="../intro/company.html">회사개요</a></li>
+							<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+							<li><a href="../intro/subsidiary.html">관계사</a></li>
+							<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+							<li><a href="../intro/map.html">사업장소개</a></li>
+							<li><a href="../intro/jobnotice.html">채용정보</a></li>
+						</ul>
+					</li>
+					<li><a href="../business/measure.html">사업분야</a>
+						<ul>
+							<li><a href="../business/measure.html">계량계측사업</a></li>
+							<li><a href="../business/components.html">자동차부품사업</a></li>
+						</ul>					
+					</li>
+					<li><a href="../product/product.html">제품소개</a>
+						<ul>
+							<li><a href="../product/product_view.html">전력량계</a></li>
+							<li><a href="../product/product_view.html">설미미터</a></li>
+							<li><a href="../product/product_view.html">전기차충전기</a></li>
+							<li><a href="../product/product_view.html">기타제품</a></li>
+						</ul>						
+					</li>
+					<li><a href="../customer/notice.html">고객지원</a>
+						<ul>
+							<li><a href="../customer/notice.html">공지사항</a></li>
+							<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+							<li><a href="../customer/contact.html">부서별 연락처</a></li>
+						</ul>						
+					</li>
+					<li><a href="../information/ir.html">IR</a>
+						<ul>
+							<li><a href="../information/ir.html">IR 자료실</a></li>
+							<li><a href="../information/general.html">공시정보</a></li>
+							<li><a href="../information/stock.html">주가정보</a></li>
+							<li><a href="../information/finance.html">재무정보</a></li>
+						</ul>					
+					</li>
+				</ul>
+			</div>
+			<div class="lang">
+				<ul>
+					<li><a href="#" class="on">KOR</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>				
+			</div>
+			<div class="m_menu">
+				<button type="button" class="more">모바일메뉴보기</button>
+				<div class="m_gnb">
+					<div class="g_top">
+						<a href="#" class="on first">KOR</a>
+						<a href="#">ENG</a>
+						<button type="button">모바일메뉴닫기</button>
+					</div>
+					<div class="g_bot">
+						<ul>
+							<li><a href="javascript:void(0);" class="d2_tit">회사소개</a>
+								<ul class="depth2">
+									<li><a href="../intro/company.html">회사개요</a></li>
+									<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+									<li><a href="../intro/subsidiary.html">관계사</a></li>
+									<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+									<li><a href="../intro/map.html">사업장소개</a></li>
+									<li><a href="../intro/jobnotice.html">채용정보</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">사업분야</a>
+								<ul class="depth2">
+									<li><a href="../business/measure.html">계량계측사업</a></li>
+									<li><a href="../business/components.html">자동차부품사업</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">제품소개</a>
+								<ul class="depth2">
+									<li><a href="../product/product_view.html">전력량계</a></li>
+									<li><a href="../product/product_view.html">설미미터</a></li>
+									<li><a href="../product/product_view.html">전기차충전기</a></li>
+									<li><a href="../product/product_view.html">기타제품</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">고객지원</a>
+								<ul class="depth2">
+									<li><a href="../customer/notice.html">공지사항</a></li>
+									<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+									<li><a href="../customer/contact.html">부서별 연락처</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">IR</a>
+								<ul class="depth2">
+									<li><a href="../information/ir.html">IR 자료실</a></li>
+									<li><a href="../information/general.html">공시정보</a></li>
+									<li><a href="../information/stock.html">주가정보</a></li>
+									<li><a href="../information/finance.html">재무정보</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+	<div id="container" class="container">
+		<div class="s_title">
+			<p>회사소개</p>
+		</div>
+		<div class="loaction">
+			<div class="loac_box">
+				<ul>
+					<li class="home"><a href="../main/main.html">홈</a></li>
+					<li class="dep dep1">
+						<a href="javascript:;">회사소개</a>
+						<ul>
+							<li><a href="../intro/company.html">회사소개</a></li>
+							<li><a href="../business/measure.html">사업분야</a></li>
+							<li><a href="../product/product.html">제품소개</a></li>
+							<li><a href="../customer/notice.html">고객지원</a></li>
+							<li><a href="../information/ir.html">IR</a></li>
+						</ul>
+					</li>
+					<li class="dep dep2">
+						<a href="javascript:;">관계사</a>
+						<ul>
+							<li><a href="../intro/company.html">회사개요</a></li>
+							<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+							<li><a href="../intro/subsidiary.html">관계사</a></li>
+							<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+							<li><a href="../intro/map.html">사업장소개</a></li>
+							<li><a href="../intro/jobnotice.html">채용정보</a></li>
+						</ul>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="family_box">
+				<h4 class="sub_tit sub_tit3">피에스텍 NETWORK</h4>
+				<div class="ps_family">
+					<img src="../images/contents/family_img1.png" alt="" usemap="#family_h">
+				</div>
+			</div>
+		</div>
+		<div class="family_cont int_box2 cont_pdb100">
+			<div class="content">
+				<div class="family_box">
+					<h4 class="sub_tit sub_tit2">관계사 소개</h4>
+					<div class="family_list">
+						<div class="list_box">
+							<div class="f_img">
+								<img src="../images/contents/family_img2.jpg" alt="">
+							</div>
+							<div class="f_txt">
+								<dl>
+									<dt>회사명</dt>
+									<dd>(주)풍성</dd>
+								</dl>
+								<dl>
+									<dt>설립일</dt>
+									<dd>1957.12</dd>
+								</dl>
+								<dl>
+									<dt>사업</dt>
+									<dd>지주회사/투자 등</dd>
+								</dl>
+								<dl>
+									<dt>위치</dt>
+									<dd>서울 성동구</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="list_box">
+							<div class="f_img">
+								<img src="../images/contents/family_img3.jpg" alt="">
+							</div>
+							<div class="f_txt">
+								<dl>
+									<dt>회사명</dt>
+									<dd>피에스얼라이언스(주)</dd>
+								</dl>
+								<dl>
+									<dt>설립일</dt>
+									<dd>2012.01</dd>
+								</dl>
+								<dl>
+									<dt>사업</dt>
+									<dd>기업인수 및 합병, 사모펀드 설립 운영, <span>금융자산 투자 및 관리</span></dd>
+								</dl>
+								<dl>
+									<dt>위치</dt>
+									<dd>서울 성동구</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="list_box">
+							<div class="f_img">
+								<img src="../images/contents/family_img4.jpg" alt="">
+							</div>
+							<div class="f_txt">
+								<dl>
+									<dt>회사명</dt>
+									<dd>피에스파워(주)</dd>
+								</dl>
+								<dl>
+									<dt>설립일</dt>
+									<dd>1997.06 / 2019.07</dd>
+								</dl>
+								<dl>
+									<dt>사업</dt>
+									<dd>신재생에너지 발전</dd>
+								</dl>
+								<dl>
+									<dt>위치</dt>
+									<dd>충남 홍성군</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="list_box">
+							<div class="f_img">
+								<img src="../images/contents/family_img5.jpg" alt="">
+							</div>
+							<div class="f_txt">
+								<dl>
+									<dt>회사명</dt>
+									<dd>서평택탱크터미널(주)</dd>
+								</dl>
+								<dl>
+									<dt>설립일</dt>
+									<dd>2007.12</dd>
+								</dl>
+								<dl>
+									<dt>사업</dt>
+									<dd>액체연료 및 관련제품 위험물 보관</dd>
+								</dl>
+								<dl>
+									<dt>위치</dt>
+									<dd>충남 당진시</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="list_box">
+							<div class="f_img">
+								<img src="../images/contents/family_img6.jpg" alt="">
+							</div>
+							<div class="f_txt">
+								<dl>
+									<dt>회사명</dt>
+									<dd>풍성에너지(주)</dd>
+								</dl>
+								<dl>
+									<dt>설립일</dt>
+									<dd>2015.01 / 2018.08</dd>
+								</dl>
+								<dl>
+									<dt>사업</dt>
+									<dd>에너지 소비 효율화, 신재생 에너지 공급<span>최적화, 전력 거래 도/소매 서비스</span></dd>
+								</dl>
+								<dl>
+									<dt>위치</dt>
+									<dd>서울 성동구</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="list_box">
+							<div class="f_img">
+								<img src="../images/contents/family_img7.jpg" alt="">
+							</div>
+							<div class="f_txt">
+								<dl>
+									<dt>회사명</dt>
+									<dd>대정장학재단</dd>
+								</dl>
+								<dl>
+									<dt>설립일</dt>
+									<dd>2013.04</dd>
+								</dl>
+								<dl>
+									<dt>사업</dt>
+									<dd>장학, 연구지원</dd>
+								</dl>
+								<dl>
+									<dt>위치</dt>
+									<dd>서울 성동구</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="page_Btn page_Btn2">
+			<ul class="quick quick2">
+				<li class="on top"><a href="">top</a></li>
+			</ul>
+		</div>
+		<map name="family_h" id="family_h">
+			<area shape="rect" coords="135,2,302,160" href="http://www.pstec.co.kr/" target="_blank" alt="" onfocus="this.blur();"/>
+			<area shape="rect" coords="559,241,726,399" href="http://www.wptt.co.kr/" target="_blank" alt="" onfocus="this.blur();" />
+			<area shape="rect" coords="426,481,593,639" href="http://www.daejungaf.com/" target="_blank" alt="" onfocus="this.blur();" />
+		</map>
+		<script type="text/javascript">
+
+		$(document).ready(function(e) {
+			$('.ps_family img[usemap]').rwdImageMaps();
+		});
+		</script>
+	</div>
+	<div class="foot_box foot_box2">
+		<div id="footer">
+			<div class="foot">
+				<p class="f_logo">피에스텍(주)</p>
+				<div class="addr">
+					<ul>
+						<li>
+							<p>본<em>사</em>서울특별시 성동구 왕십리로 46(성수동1가)</p>
+							<p>TEL02-3408-1700</p>
+							<p>FAX02-499-0624</p>
+						</li>
+						<li>
+							<p>김포사업장경기도 김포시 양촌읍 황금3로7번길 80</p>
+							<p>TEL031-988-2661</p>
+							<p>FAX031-988-2656</p>
+						</li>
+						<li>
+							<p>광천사업장충청남도 홍성군 광천읍 광천로430번길 41-113</p>
+							<p>TEL041-642-7822</p>
+							<p>FAX041-642-2658</p>
+						</li>
+						<li>
+							<p>나주사업장전라남도 나주시 왕곡면 혁신산단7길 31-7</p>
+							<p>TEL061-817-0505</p>
+							<p>FAX061-817-0506</p>
+						</li>
+					</ul>
+					<p class="mob_add">서울특별시 성동구 왕십리로 46(성수동1가)<span>TEL.02-3408-1700 FAX.02-499-0624</span></p>
+				</div>
+				<div class="family">
+					<button type="button">FAMILY SITE</button>
+					<ul>
+						<li><a href="#">피에스텍(주)</a></li>
+						<li><a href="#">서평택탱크터미널(주)</a></li>
+						<li><a href="#">대정장학재단</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="copy">
+			<p>&copy;2019. POONSUNG  ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,340 @@
+@CHARSET "utf-8";
+
+body{overflow-x:hidden;}
+/*헤더*/
+header{position:fixed;top:0;width:100%;height:80px;padding:0 20px;border-bottom:1px solid rgba(255,255,255,0.1);z-index:100;text-align:center;transition:0.5s;}
+header h1{float:left;margin-top:25px;display: inline-block;}
+header h1 a{display:block; width:244px; height:32px; background:url(../../images/common/logo.png) no-repeat 0 center; font-size:0;}
+header > ul{/* float:left; */margin: 20px 0 0 -158px;overflow:hidden;display: inline-block;}
+header > ul > li{float:left; width:87px; margin:7px 0 0 80px;}
+header ul li:first-child{margin-left:0;}
+header ul li a{font-size:20px; color:#fff;}
+header ul li a.on{color:#2555c6;}
+header ul li ul{display:none; margin-top:50px;transition:0.5s;}
+header ul li ul li{line-height: 38px;}
+header ul li ul li a{font-size: 18px; color: #666;}
+header ul li ul li a:hover{color:#2555c6;}
+header .login{display:inline-block; width:90px; height:40px; margin-top:20px; border-radius:30px; border:1px solid rgba(255,255,255,0.4); font-size:14px; text-align:center; line-height:37px; color:#fff;}
+header .login span{padding-left:21px; background:url(../../images/common/login.png) no-repeat 0 center;}
+header.on:before{content:''; position:absolute; top:80px; left:0; width:100%; height:1px; background:#e2e2e3;}
+header.on h1 a{background:url(../../images/common/logo_on.png) no-repeat 0 center;}
+header.on{height:260px; background:#fbfcfc; transition:0.5s;}
+header.on ul li a{color:#333;}
+header.on ul li a.on{color:#2555c6;}
+header.on ul li ul{display:block;transition:0.5s;}
+header.on .login{border:1px solid #666; color:#666;}
+header.on .login span{background:url(../../images/common/login_on.png) no-repeat 0 center;}
+header .loginOn{float:right;width:160px;position: relative;text-align:right;}
+header .loginOn .login2{display:none; width: 145px;}
+header .loginOn .joinInfo{display:none;width: 160px;padding: 20px;background: #fff;border-radius: 5px;position: absolute;top: 70px;left: 0;}
+header .loginOn .joinInfo a{width: 120px;height: 40px;border: 1px solid #ddd;border-radius: 5px;font-size: 15px;color: #333;text-align: center;display: inline-block;line-height: 40px;}
+
+header.jbFixed{background:#fbfcfc;}
+header.jbFixed h1 a{background:url(../../images/common/logo_on.png) no-repeat 0 center;}
+header.jbFixed ul li a{color:#111;}
+header.jbFixed .login{border:1px solid #666; color:#666;}
+header.jbFixed .login span{background:url(../../images/common/login_on.png) no-repeat 0 center;}
+
+.header2{background:#22335c;}
+
+/*footer*/
+footer{height:140px; padding-top:30px; background:#5d5a5a; font-size:14px; font-weight:300; color:#c7c7c7; overflow:hidden;}
+footer .fleft{float:left; text-align:left;}
+footer .fleft .addr{}
+footer .fleft ul{margin:10px 0 22px;}
+footer .fleft ul li{display:inline-block; margin-right:10px; padding-right:10px; border-right:1px solid #888; line-height:12px;}
+footer .fleft ul li:last-child{margin:0; padding:0; border:none;}
+footer .fleft .copy{font-size:12px; color:#9a9a9a;}
+footer .fright{float:right;}
+footer .fright a{display:inline-block; width:140px; height:40px; margin-left:8px; background:#454545; text-align:center; line-height:40px; color:#fff;}
+
+/*메인 비쥬얼*/
+.visual{position:relative;}
+.visual ul{}
+.visual ul li{width:100%; height:980px; overflow:hidden;}
+.visual ul li .vtxt{margin:180px 0 0 360px;}
+.visual ul li dl{}
+.visual ul li dl dt{font-size:58px; font-weight:700; color:#fff; line-height:62px;}
+.visual ul li dl dd{margin:10px 0 40px; font-size:38px; color:#fff; font-weight:300;}
+.visual ul li dl dd strong{font-weight:500;}
+.visual ul li p{font-size:18px; font-weight:300; color:#fff; line-height:24px;}
+.visual .service{position:absolute; bottom:0; left:50%; width:200px; height:40px; background:#ebebeb; border-radius:45px 45px 0 0; font-size:15px; font-weight:500; color:#111; line-height:43px; text-align:center; transform:translate(-50%,0);}
+.visual .service span{padding-left:20px; background:url(../../images/contents/micon.png) no-repeat 0 center;}
+.main1{position:relative; background:#ebebeb;}
+
+/*서비스모음*/
+.serviceList{}
+.serviceList li{height:500px; overflow:hidden;}
+.serviceList li.ser1{background:url(../../images/contents/service1.png) no-repeat 720px center;}
+.serviceList li.ser2{background:url(../../images/contents/service2.png) no-repeat 110px center;}
+.serviceList li.ser3{background:url(../../images/contents/service3.png) no-repeat 762px center;}
+.serviceList li.ser4{background:url(../../images/contents/service4.png) no-repeat 148px center;}
+.serviceList li .serviceTxt{width:610px;}
+.serviceList li .serviceTxt2{float:right;}
+.serviceList li strong{position:relative; display:inline-block; margin-top:113px; padding-right:13px; font-size:60px; font-family: 'Mont HeavyDEMO'; color:#fff; line-height:50px;}
+.serviceList li strong:before{content:''; position:absolute; bottom:0; right:0; width:36px; height:36px; background:url(../../images/contents/hide.png) no-repeat 0 0;}
+.serviceList li dl{margin-left:60px;}
+.serviceList li dl dt{font-size:20px; font-weight:500;}
+.serviceList li dl dt span{display:block; margin-bottom:5px; font-size:50px; font-weight:100; color:#22335c;}
+.serviceList li dl dd{position:relative; padding-left:9px; font-size:18px; line-height:28px;}
+.serviceList li dl dd:nth-child(2){margin-top:5px;}
+.serviceList li dl dd:before{content:''; position:absolute; left:0; top:12px; width:4px; height:4px; background:#3863ca; border-radius:50%;}
+.main1 .swiper-pagination-bullet{width:12px; height:12px; background:#fff; opacity:1;}
+.main1 .swiper-pagination-bullet-active{background:#3a65cb;}
+.main1 .Btn{position:absolute; top:50%; width:30px; height:54px; background:url(../../images/contents/arrow.png) no-repeat 0 0; transform:translate(0,-50%);}
+.main1 .ser-button-prev{left:270px;}
+.main1 .ser-button-next{right:270px; background-position:-35px 0;}
+
+/*contents report*/
+.recont{margin-top:80px;}
+.main2{height:600px; background:url(../../images/contents/mainbg1.png) no-repeat 0 center;}
+.mBox{float:right;width:960px;height:360px;margin-top:120px;padding:62px 0 0 40px;background:#fff;box-shadow: 1px 9px 13px -7px #555;}
+.mBox p{font-size:18px;}
+.mBox dl{}
+.mBox dl dt{margin:7px 0 13px; font-size:30px; font-weight:700; color:#22335c;}
+.mBox dl dd{font-size:20px; line-height:28px;}
+.mBox a{display:inline-block; width:260px; height:60px; margin-top:35px; background:#2555c6; border-radius:30px; font-size:18px; font-weight:500; color:#fff; text-align:center; line-height:60px;}
+
+/*서비스 이용신청*/
+.main3{height:600px; background:url(../../images/contents/mainbg2.png) no-repeat right center;}
+.main3 .mBox{float:left; padding:40px 0 0 40px;}
+.main3 .mBox dl dd{font-size:18px;}
+.main3 .mBox dl dd{margin-bottom:8px;}
+.main3 .mBox a{margin-top:27px; background:none; border:1px solid #2555c6; color:#2555c6;}
+
+/*commercial*/
+.main4{height:490px; text-align:center; overflow:hidden;}
+.main4 dl{}
+.main4 dl dt{margin:110px 0 20px; font-size:30px; font-weight:700;}
+.main4 dl dd{font-size:18px; line-height:28px;}
+.main4 ul{width:775px; margin:30px auto 0;}
+.main4 ul li{display:inline-block; margin:0 0 15px 40px; border-bottom:1px solid #a1a1a1; font-size:20px; font-weight:500;}
+.main4 ul li:nth-child(1),
+.main4 ul li:nth-child(7){margin:0 0 15px 0;}
+
+/**/
+.main5{height:400px; background:url(../../images/contents/mainbg3.png) no-repeat center center / cover;}
+.main5 ul{overflow:hidden;}
+.main5 ul li{position:relative;float:left;width:215px;margin: 110px 0 0 22px;padding-top:120px;text-align:center;}
+.main5 ul li strong{font-size:14px; color:#1ca9e4;}
+.main5 ul li p{font-size:16px; font-weight:300; color:#fff;}
+.main5 ul li:before{content:''; position:absolute; top:0; left:50%; width:100px; height:100px; background:url(../../images/contents/micon2.png) no-repeat 0 0; transform:translate(-50%,0);}
+.main5 ul li:nth-child(2):before{background-position: -120px 0;}
+.main5 ul li:nth-child(3):before{background-position: -240px 0;}
+.main5 ul li:nth-child(4):before{background-position: -360px 0;}
+.main5 ul li:nth-child(5):before{background-position: -480px 0;}
+
+/*Real Estate*/
+.sub{position:static;padding:0 20px 0 0;background:#22335c;}
+.sub h1{width:300px; padding-left:20px;}
+.sub ul{float:left; margin:0;}
+.sub ul li{margin:0;}
+.sub ul li a{display:block; width:140px; height:80px; font-size:16px; line-height:80px; text-align:center;}
+.sub ul li a.on{background:#102149;}
+.sub .login{float:right; display:block; width:90px; height:40px; margin-top:20px; border-radius:30px; border:1px solid rgba(255,255,255,0.4); font-size:14px; text-align:center; line-height:37px; color:#fff;}
+.sub .login span{padding-left:21px; background:url(../../images/common/login.png) no-repeat 0 center;}
+
+.contents{overflow:hidden;height:1044px;width: 1903px;}
+.lnb{width:300px;float:left;height: 1044px;outline-right: 1px solid #ddd;position: absolute;top: 80px;left: 0;background: #fff;z-index: 99;border-right: 1px solid #ddd;}
+.lnb .lnbBox{width:100%; height:100%; overflow:hidden;}
+.lnb .lnbBox > form > fieldset > ul{height:100%;}
+.lnb .lnbBox > form > fieldset > ul > li{}
+.lnb .lnbBox > form > fieldset > ul > li .txt{display:block; position:relative; height:59px; padding-left:20px; border-bottom:1px solid #ddd; font-size:16px; color:#666; line-height:59px;}
+.lnb .lnbBox > form > fieldset > ul > li .txt:before{content:''; position:absolute; top:26px; right:20px; width:12px; height:18px; background:url(../../images/contents/arrow2.png) no-repeat 0 0; }
+.lnb .lnbBox > form > fieldset > ul > li.on .txt{color:#111;}
+.lnb .lnbBox > form > fieldset > ul > li.on .txt:before{background-position:-16px 0; }
+.lnb .lnbBox ul li .lnbOn{height:923px; padding:20px; background:#f5f5f5; display:none; width:299px;}
+.lnb .lnbBox ul li .lnbOn ul{}
+.lnb .lnbBox ul li .lnbOn ul li{margin-bottom: 15px;}
+.lnb .lnbBox ul li .lnbOn ul li .lnbT{display:block;margin-bottom: 6px;font-size:15px;font-weight:500;color:#333;}
+.lnb .lnbBox ul li .lnbOn ul li select{width:260px; height:40px; padding-left:9px; background: #fff url(../../images/contents/select.png) no-repeat 95% center;  border:1px solid #ddd; border-radius:5px; font-size:15px; font-weight:300; color:#666;}
+.lnb .lnbBox ul li .lnbOn ul li > button{width:260px; height:30px; margin-bottom:5px; background:#fff; border:1px solid #ddd; border-radius:30px; font-size:15px; font-weight:300; text-align:center; line-height:30px; color:#666;}
+.lnb .lnbBox ul li .lnbOn ul li > button.on{border:1px solid #3863ca; color:#3863ca;}
+.lnb .lnbBox ul li .lnbOn > button{width:125px; height:40px; margin-top:23px; background:#999999; border-radius:5px; font-size:15px; font-weight:500; color:#fff; text-align:center; line-height:40px;}
+.lnb .lnbBox ul li .lnbOn > button.on{background:#3863ca;margin-left: 6px;}
+
+.lnb .mem_ipt input[type="checkbox"] + label span, .mem_ipt input[type="radio"] + label span{width:260px; height:30px; margin-bottom:5px; background:#fff; border:1px solid #ddd; border-radius:30px; font-size:15px; font-weight:300; text-align:center; line-height:30px; color:#666;}
+.lnb .mem_ipt input[type="checkbox"] + label, .mem_ipt input[type="radio"] + label{color:#666;}
+.lnb .mem_ipt input[type="checkbox"]:checked + label span, .mem_ipt input[type="radio"]:checked + label span{border:1px solid #3863ca; color:#3863ca;}
+
+.mapcont{float:left;height:100%;width: 100%;padding-left: 300px;}
+.title{height:60px; padding-left:21px; font-size:22px; font-weight:500; color:#111; border-bottom:1px solid #ddd; line-height:60px;}
+.mapcont .mapTop{padding:20px 20px 15px 20px; overflow:hidden;}
+.mapcont .mapC{float:left; width:930px; height:551px; border:1px solid #ddd; border-radius:5px; overflow:hidden;}
+.mapcont .mapC .mapP{height:50px; background:#f5f5f5; border-bottom:1px solid #ddd; line-height:50px;}
+.mapcont .mapC .mapP span{position:relative; margin-left:20px; padding-left:17px; font-size:15px; color:#111;}
+.mapcont .mapC .mapP span:before{content:''; position:absolute; top:5px; left:0; width:12px; height:12px; background:#ea4335; border-radius:50%;}
+.mapcont .mapC .mapP span.big:before{background:#1ca9e4;}
+.mapcont .mapC .mapP span.big{}
+.mapcont .mapC .mapimg{float:right;}
+.mapcont .mapC .mapimg img{}
+
+.mapcont .mapList{float:right;width: 610px;border:1px solid #ddd;border-radius:5px;}
+.mapcont .mapList table{width:100%;}
+.mapcont .mapList table .mem_ipt{float:left;margin: 0 20px 0 20px;}
+.mapcont .mapList table thead tr th{width:50px; height:49px; background:#f5f5f5; border-bottom:1px solid #ddd; font-size:15px; font-weight:400; color:#111; text-align:left;}
+.mapcont .mapList table thead tr th:first-child{width:100px;}
+.mapcont .mapList table thead tr th:nth-child(2){width: 65px;}
+.mapcont .mapList table thead tr th:nth-child(3){width: 57px;}
+.mapcont .mapList table thead tr th:last-child,
+.mapcont .mapList table tbody tr td:last-child{display:none;}
+.mapcont .mapList table tbody tr td{height:50px; border-bottom:1px solid #ddd; font-size:15px; font-weight:300; color:#666;}
+.mapcont .mapList table tbody tr td:first-child{}
+.mapcont .mapList table tbody tr:last-child td{border:none;}
+.mapcont .mapList table tbody tr:nth-child(even) td{background:#f5f7fc;}
+.mem_ipt input[type="checkbox"], .mem_ipt input[type="radio"]{display:none;}
+.mem_ipt input[type="checkbox"] + label, .mem_ipt input[type="radio"] + label{color:#fff; font-size:14px;}
+.mem_ipt input[type="checkbox"] + label span, .mem_ipt input[type="radio"] + label span{display:inline-block; width:18px; height:18px; margin:-2px 7px 0 0; vertical-align:middle; background: #fff url(../../images/contents/check.png) no-repeat left top; cursor:pointer;}
+.mem_ipt input[type="checkbox"]:checked + label span, .mem_ipt input[type="radio"]:checked + label span{background-position: -24px 0;}
+
+.mapcont .mycheck{padding:0 20px 20px;}
+.mapcont .mycheck > h3{font-size:18px; font-weight:500; color:#111;}
+.mapcont .mycheck .checkList{margin-top:10px; height:300px; overflow-y:scroll;}
+.mapcont .mycheck .checkList ul{}
+.mapcont .mycheck .checkList ul li{display:inline-block; height:30px; margin-left:6px; padding:0 12px; background:#fff; border:1px solid #ddd;border-radius:30px; font-size:15px; font-weight:300; color:#333; line-height:29px; cursor:pointer;}
+.mapcont .mycheck .checkList ul li:first-child{margin-left:0;}
+.mapcont .mycheck .checkList ul li span{padding-right:15px; background: url(../../images/contents/hidden.png) no-repeat right center; }
+.mapcont .mycheck .checkList {}
+.mapcont .mycheck .checkList table{width:100%;border:1px solid #ddd;border-radius:5px;}
+.mapcont .mycheck .checkList table thead tr th{width:16%; height:49px; background:#f5f5f5; border-bottom:1px solid #ddd; font-size:15px; font-weight:400; color:#111;}
+.mapcont .mycheck .checkList table tbody tr td{height:50px; border-bottom:1px solid #ddd; font-size:15px; font-weight:300; color:#666; text-align:center;}
+.mapcont .mycheck .checkList table tbody tr td button{padding:0 11px; margin:0 1px; height:26px; background:#999999; border-radius:5px; font-size:14px; font-weight:300; color:#fff; line-height:26px;}
+.mapcont .mycheck .checkList table .mem_ipt{display:none;}
+
+.popupBox{display:none; position: absolute; top: 150px; left: 50%; transform: translate(-50%,0); z-index: 101; width: 1330px;}
+.popupBox button{float: right; width:32px; height:32px; background: url(../../images/contents/close.png) no-repeat 0 0; font-size:0;}
+.popup{width:1280px; height:750px; background:#fff;}
+.popup .popupA{padding:40px;}
+.popup h3{padding-bottom:15px; border-bottom:2px solid #111; font-size:22px; font-weight:500; color:#111;}
+.popup h4{margin:35px 0 18px; font-size:18px; font-weight:500; color:#111;}
+.popup .tabt{overflow:hidden;}
+.bod{border:1px solid #ddd; border-radius:5px; overflow:hidden;}
+.popup .tabt table tr th{width:140px; border-right:1px solid #ddd; border-bottom:1px solid #ddd; height:50px; background:#f0f0f0; font-size:15px; font-weight:400; color:#111;}
+.popup .tabt table tr td{width:439px; border-bottom:1px solid #ddd;}
+.popup .tabt table tr:last-child th, 
+.popup .tabt table tr:last-child td{border-bottom:0;}
+.popup .tabt .tabl{float:left;}
+.popup .tabt .tabr{float:right;}
+.popup .trans{}
+.popup .trans table{width:100%; border-radius:5px;}
+.popup .trans table tr th{width:16.6%; height:50px; border-bottom:1px solid #ddd; background:#f5f5f5; font-size:15px; font-weight:400; color:#111;}
+.popup .trans table tr td{height:50px;}
+.popup .trans table tr:nth-child(even) td{background:#f5f7fc;}
+.popup .image{overflow:hidden;}
+.popup .image .gallery-top{float:left; width:860px; height:560px;}
+.popup .image .gallery-top img{width:100%; height:100%;}
+.popup .image .gallery-thumbs{float:right; width:330px; height:560px; overflow:hidden;}
+.popup .image .Btn{position:absolute; width:40px; height:40px; right:145px; background: url(../../images/contents/arrow3.png) no-repeat 0 0; z-index:99;}
+.popup .image .img-button-prev1{top:20px;}
+.popup .image .img-button-next1{bottom:20px; background-position:-49px 0;}
+.popup .mCSB_inside > .mCSB_container{margin:0;}
+.popup .mCSB_scrollTools .mCSB_draggerRail{width:6px; background:#fff;}
+.popup .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:6px; background:#cccccc;}
+.popup .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{background:#cccccc;}
+.popup .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .popup .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{background:#cccccc;}
+.bg{display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:100;}
+
+/*insight*/
+.insight{}
+.insight ul{}
+.insight ul li{padding:20px;border-bottom:1px solid #ddd;overflow:hidden;height: 220px;}
+.insight ul li img{float:left;}
+.insight ul li .inTxt{float:left;display: table;height: 100%;}
+.insight ul li .inTxt dl{display: table-cell; padding-left:20px; vertical-align: middle;}
+.insight ul li .inTxt dl dt{margin-bottom:10px; font-size:26px; font-weight:500; color:#111;}
+.insight ul li .inTxt dl dt span{display:block; font-size:20px; font-weight:400;}
+.insight ul li .inTxt dl dd{font-size:16px; font-weight:300; color:#999; line-height:24px;}
+.insight ul li .indata{float:right; margin-top:31px;}
+.insight ul li .indata span{font-size:16px; font-weight:300; color:#999;}
+.insight ul li .indata span.view{margin-left:20px; padding-left:25px; background: url(../../images/contents/view.png) no-repeat 0 8px;}
+
+/*news*/
+.news{}
+.news table{width:100%;}
+.news table thead tr th{height:60px; background:#f5f5f5; border-bottom:1px solid #ddd; font-size:15px; font-weight:400; }
+.news table tbody tr td{height:60px; border-bottom:1px solid #ddd; font-size:15px; font-weight:300; color:#666; text-align:center;}
+.news table tbody tr td:nth-child(2){padding-left:40px; text-align:left;}
+.news table tbody tr td a{color:#666;}
+.news table tbody tr td .new{display:inline-block; width:17px; height:17px; margin-left:5px; background: url(../../images/contents/new.png) no-repeat 0 0; font-size:0; vertical-align:middle;}
+
+/*로그인*/
+.loginBox{background: url(../../images/contents/loginbg.png) no-repeat center center / cover;}
+.bgBox .wrap{width:400px; margin:340px auto 0; text-align:center;}
+.bgBox{height:980px; overflow:hidden;}
+.bgBox ul{}
+.bgBox ul li{margin-top:20px; text-align:left;}
+.bgBox ul li > label{display:block; padding:0 0 7px 20px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.33);}
+.bgBox ul li > input{width:100%; height:40px; padding-left:20px; background:rgba(255,255,255,0.18); border:none; border-radius:30px; font-size:16px; font-weight:500; color:#fff; line-height:40px; }
+.bgBox ul li a.logBtn{display:block; width:100%; height:40px; background:#1ca9e4; border-radius:30px; font-size:14px; font-weight:700; text-align:center; color:#fff; line-height:40px;}
+.bgBox ul li > input::-webkit-input-placeholder {color: #fff;}
+.bgBox ul li > input::-ms-input-placeholder { color: #fff; }
+.loginBox ul li:nth-child(3){margin:25px 0 25px 20px;}
+.bgBox ul li .mem_ipt input[type="checkbox"] + label span, .mem_ipt input[type="radio"] + label span{width:16px; height:16px;}
+.bgBox ul li .mem_ipt input[type="checkbox"] + label span, .mem_ipt input[type="radio"] + label span{background:url(../../images/contents/loginc.png) no-repeat 0}
+.bgBox ul li .mem_ipt input[type="checkbox"]:checked + label span, .mem_ipt input[type="radio"]:checked + label span{background-position: -23px 0;}
+
+.report{background: url(../../images/contents/rebg.png) no-repeat center center / cover;}
+.report .wrap{float:left; margin-left:100px;}
+.report h2{font-size:18px;font-weight:700;color:#fff;line-height: 21px;}
+.report h2 strong{display:block; font-size:40px; font-weight:900; color:rgba(255,255,255,0.1);}
+.report ul li:nth-child(4){margin-top:40px;}
+.report ul li:nth-child(5){margin:25px 0 25px 20px;}
+.report .reportT{float:left;width:960px;height:600px;margin-top:230px;padding: 80px 0 0 360px;background:rgba(255,255,255,0.82);}
+.report .reportT h2{font-size:24px; font-weight:700; color:#000;}
+.report .reportT h2 span{display:block; font-size:18px; font-weight:500; line-height:40px;}
+.report .reportT p{margin-bottom:10px; font-size:16px; font-weight:300; color:#000; line-height:24px;}
+.report .reportT p span{display:block;}
+
+/*회사소개*/
+body.on{background-image: url(../../images/contents/compbg.png);background-repeat: no-repeat;background-position:center center;background-size: cover;background-attachment: fixed;}
+.intro{text-align:center;}
+.intro .intro1{padding-top: 250px;}
+.intro .intro1 dl{margin-top:40px;}
+.intro .intro1 dl dt{display:inline-block; position:relative; padding:0 4px; font-size:50px; font-weight:700; color:#fff;}
+.intro .intro1 dl dt.beg:before{content:''; position:absolute; bottom:0; left:0; width:100%; height:26px; background:rgba(0,0,0,0.3); z-index:-1;}
+.intro .intro1 dl dt span{font-size:38px; font-weight:100;}
+.intro .intro1 dl dd{margin-top:20px; font-size:18px; font-weight:300; color:#fff; line-height:25px;}
+.intro .intro1 p{margin-top:60px; font-size:18px; font-weight:300; color:#fff; line-height:25px;}
+.intro .intro1 p .Nl2{margin-top:25px;}
+.intro .intro2{margin:350px 0 75px; color:#fff}
+.intro .intro2 h3{font-size:32px; font-weight:500;}
+.intro .intro2 dl{}
+.intro .intro2 dl dt{margin:30px 0 15px; font-size:18px;}
+.intro .intro2 dl dd{font-size:14px; font-weight:300; color:rgba(255,255,255,0.6);}
+.intro .intro2 ul{width:600px; margin:35px auto 0;}
+.intro .intro2 ul li{margin-top:18px;}
+.intro .intro2 ul li label{display:block; margin-bottom:4px; font-size:14px; font-weight:500; text-align:left;}
+.intro .intro2 ul li .ipt{width:100%; height:40px; padding-left:20px; background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.2); font-size:16px; font-weight:500; color:#fff;}
+.intro .intro2 ul li textarea.ipt{height:140px; padding:10px 20px;}
+.intro .intro2 button{width:200px; height:40px; margin-top:35px; background:#1ca9e4; border-radius:30px; font-size:14px; font-weight:700; text-align:center; line-height:40px; color:#fff;}
+
+/*news view*/
+.view{padding-bottom:100px; font-size:15px;}
+.view .vtit{height:60px; padding:0 20px; background:#f0f0f0; border-bottom:1px solid #ddd; font-size:15px; overflow:hidden; line-height:60px;}
+.view .vtit h3{float:left;}
+.view .vtit span{float:right; font-weight:300; color:#666;}
+.view .vtit span.viewNum{}
+.view .vtit span.viewNum strong{font-weight:400; color:#333;}
+.view .vtit span.data{position:relative; margin-left:20px; padding-left:20px;}
+.view .vtit span.data:before{content:''; position:absolute; top:50%; left:0; width:1px; height:11px; background:#ddd; transform:translate(0,-50%);}
+.view .viewCotn{height:600px; padding:38px 20px;}
+.view .viewCotn p{color:#666; line-height:25px;}
+.view .downL{height:60px; line-height:60px; padding:0 20px; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+.view .downL dl{overflow:hidden;}
+.view .downL dl dt{float:left;}
+.view .downL dl dd{float:left; margin-left:20px; }
+.view .downL dl dd a{display:block; padding-right:50px; background: url(../../images/contents/download.png) no-repeat right center; color:#22335c;}
+
+/*공통사항*/
+.wrap{width:1200px; margin:0 auto;}
+.wrap2{width:1280px; margin:0 auto ;}
+.Nl{display:block;}
+.title2{padding-left:0;}
+
+/*페이징*/
+.pageing{margin:40px 0 120px; text-align:center;}
+.pageing a{display:inline-block; margin-left:27px; padding:0 4px; font-size:14px; color:#646464; vertical-align:top;}
+.pageing a:first-child{margin-left:0;}
+.pageing a.on{border-bottom:2px solid #111;}
+.pageing a.pageB{width:16px; height:13px; margin:0 10px 0 0; background: url(../../images/contents/page.png) no-repeat 0 0; font-size:0; vertical-align:middle;}
+.pageing a.pageB2{background-position:-30px 0; margin:0 0 0 37px;}

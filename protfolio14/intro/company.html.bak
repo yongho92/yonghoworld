@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="../common/css/contents.css">
+  <link rel="stylesheet" href="../common/css/swiper.min.css">
+  <script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../common/js/swiper.min.js"></script>
+  <script type="text/javascript" src="../common/js/common.js"></script>
+  <script type="text/javascript" src="../common/js/contents.js"></script>
+  <title>파인아시아자산운용</title>
+ </head>
+ <body>
+	<header>
+		<h1><a href="../main/main.html"><img src="../images/common/logo.png" alt=""></a></h1>
+		<div class="gnb">
+			<ul>
+				<li><a href="../intro/company.html">회사소개</a>
+					<ul class="depth2">
+						<li><a href="../intro/company.html">회사개요</a></li>
+						<li><a href="../intro/ceo.html">CEO인사말</a></li>
+						<li><a href="../intro/organization.html">조직도</a></li>
+						<li><a href="../intro/map.html">오시는길</a></li>
+					</ul>
+				</li>
+				<li><a href="../management/philosophy.html">운용정보</a>
+					<ul class="depth2 depth2_2">
+						<li><a href="../management/philosophy.html">운용철학</a></li>
+						<li><a href="../management/stock.html">운용프로세스</a></li>
+						<li><a href="../management/risk.html">위험관리체계</a></li>
+						<li><a href="../management/workforce.html">운용전문인력소개</a></li>
+					</ul>
+				</li>
+				<li><a href="../product/pineasiafund.html">상품정보</a>
+					<ul class="depth2 depth2_3">
+						<li><a href="../product/pineasiafund.html">펀드상품</a></li>
+					</ul>
+				</li>
+				<li><a href="../disclosure/business.html">공시정보</a>
+					<ul class="depth2 depth2_4">
+						<li><a href="../disclosure/business.html">경영공시</a></li>
+						<li><a href="../disclosure/fund.html">펀드공시</a></li>
+						<li><a href="../disclosure/asset.html">자산운용보고서</a></li>
+					</ul>
+				</li>
+				<li><a href="../contact/employment.html">고객센터</a>
+					<ul class="depth2 depth2_5">
+						<li><a href="../contact/employment.html">채용정보</a></li>
+						<li><a href="../contact/notice.html">공지사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="lang">
+			<a href="#" class="on">KOR</a>
+			<a href="#">ENG</a>
+		</div>
+		<div class="all_menu menu_s">
+			<a href="#"><img src="../images/common/menu.png" alt=""></a>
+		</div>
+		<div class="m_menu">
+			<div class="close2">
+				<a href="#"><img src="../images/common/menu_on.png" alt=""></a>
+			</div>
+			<div class="leng">
+				<a href="#" class="on">KOR</a>
+				<a href="#">ENG</a>
+			</div>
+			<ul class="m_1d">
+				<li><a href="#"><span>회사소개</span></a>
+					<ul class="m_2d">
+						<li><a href="../intro/company.html">회사개요</a></li>
+						<li><a href="../intro/ceo.html">CEO인사말</a></li>
+						<li><a href="../intro/organization.html">조직도</a></li>
+						<li><a href="../intro/map.html">오시는길</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span>운용정보</span></a>
+					<ul class="m_2d">
+						<li><a href="../management/philosophy.html">운용철학</a></li>
+						<li><a href="../management/stock.html">운용프로세스</a></li>
+						<li><a href="../management/risk.html">위험관리체계</a></li>
+						<li><a href="../management/workforce.html">운용전문인력소개</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span>상품정보</span></a>
+					<ul class="m_2d">
+						<li><a href="../product/pineasiafund.html">펀드상품</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span>공시정보</span></a>
+					<ul class="m_2d">
+						<li><a href="../disclosure/business.html">경영공시</a></li>
+						<li><a href="../disclosure/fund.html">펀드공시</a></li>
+						<li><a href="../disclosure/asset.html">자산운용보고서</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span>고객센터</span></a>
+					<ul class="m_2d">
+						<li><a href="../contact/employment.html">채용정보</a></li>
+						<li><a href="../contact/notice.html">공지사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div id="container">
+	
+
+	<div class="box">
+		<div class="s_title s_title1">
+			<dl>
+				<dt>회사소개</dt>
+				<dd>COMPANY INTRODUCTION</dd>
+			</dl>
+		</div>
+		<div class="s_menu">
+			<div class="contents">
+				<ul>
+					<li class="home"><a href="../main/main.html">홈</a></li>
+					<li><a href="javascript:;" class="on">회사소개</a>
+						<ul>
+							<li><a href="../intro/company.html">회사소개</a></li>
+							<li><a href="../management/philosophy.html">운용정보</a></li>
+							<li><a href="../product/pineasiafund.html">상품정보</a></li>
+							<li><a href="../disclosure/business.html">공시정보</a></li>
+							<li><a href="../contact/employment.html">고객센터</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;" class="on">회사개요</a>
+						<ul>
+							<li><a href="../intro/company.html">회사개요</a></li>
+							<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+							<li><a href="../intro/organization.html">조직도</a></li>
+							<li><a href="../intro/map.html">오시는길</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="contents inner">
+		<h2 class="title">회사개요</h2>
+		<div class="about">
+			<dl>
+				<dt>고객제일주의<span>경영</span></dt>
+				<dd>정도경영</dd>
+				<dd>내실경영</dd>
+			</dl>
+			<p>파인아시아자산운용㈜는 고객제일주의 경영으로서<span> 정도경영과 내실경영을 목표로 <strong>미래가 있는 회사, 경쟁력을 갖춘 회사</strong>입니다.</span></p>
+			<table>
+				<caption>회사개요</caption>
+				<tbody>
+					<tr>
+						<th>회사명</th>
+						<td>파인아시아자산운용(주)</td>
+						<th>대표자</th>
+						<td>이수형</td>
+					</tr>
+					<tr>
+						<th>설립일</th>
+						<td>1999.8.6</td>
+						<th>자본금</th>
+						<td>215억</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table2">
+				<caption>회사개요</caption>
+				<tbody>
+					<tr>
+						<th>회사명</th>
+						<td>파인아시아자산운용(주)</td>
+					</tr>
+					<tr>
+						<th>설립일</th>
+						<td>1999.8.6</td>
+					</tr>
+					<tr>
+						<th>대표자</th>
+						<td>이수형</td>
+					</tr>
+					<tr>
+						<th>자본금</th>
+						<td>215억</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="box_bg">
+		<div class="contents">
+			<h2 class="title">연혁</h2>
+			<div class="his_txt">
+				<ul>
+					<li class="his_mat on">
+						<dl>
+							<dt class="on">1999. 08</dt>
+							<dd class="wi">설립</dd>
+						</dl>
+					</li>
+					<li class="right">
+						<dl>
+							<dt>2006. 12</dt>
+							<dd class="wi2">피닉스자산운용㈜로 <span>사명변경</span></dd>
+						</dl>
+					</li>
+					<li class="his_mat">
+						<dl>
+							<dt>2007. 06</dt>
+							<dd>수탁고 <span>1조 돌파</span></dd>
+						</dl>
+					</li>
+					<li class="right">
+						<dl>
+							<dt>2008. 05</dt>
+							<dd>수탁고 <span>2조 돌파</span></dd>
+						</dl>
+					</li>
+					<li class="his_mat">
+						<dl>
+							<dt>2013. 03</dt>
+							<dd>반기로 대표이사 <span>취임</span></dd>
+						</dl>
+					</li>
+					<li class="right">
+						<dl>
+							<dt>2015. 04</dt>
+							<dd>파인아시아자산운용㈜로 <span>사명변경</span></dd>
+						</dl>
+					</li>
+					<li class="his_mat">
+						<dl>
+							<dt>2015. 07</dt>
+							<dd>수탁고 <span>3조 돌파</span></dd>
+						</dl>
+					</li>
+					<li class="right">
+						<dl>
+							<dt>2016. 06</dt>
+							<dd>수탁고 <span>4조 돌파</span></dd>
+						</dl>
+					</li>
+					<li class="his_mat">
+						<dl>
+							<dt>2017. 04</dt>
+							<dd>박민호 대표이사 <span>취임</span></dd>
+						</dl>
+					</li>
+					<li class="on2 right">
+						<dl>
+							<dt class="on">2019. 04</dt>
+							<dd class="wi">이수형 대표이사<span>취임</span></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<? include ("../inc/popup.html"); ?>	
+ </div>
+	<footer>
+		<div class="contents2 main">
+			<div class="left foot">
+				<ul>
+					<li><a href="#" onclick="javascript:popup3(this);">개인정보처리방침</a></li>
+					<li><a href="#" onclick="javascript:popup(this);">신용정보활용체제</a></li>
+					<li><a href="#" onclick="javascript:popup2(this);">이메일무단수집거부</a></li>
+				</ul>
+				<p>Copyright 2019 PINE ASIA ASSET. Ltd. All rights reserved</p>
+			</div>
+			<div class="right dart">
+				<a href="http://dart.fss.or.kr/" target="_blank"><img src="../images/common/dart.png" alt="" class="main"><img src="../images/common/dart2.png" alt="" class="sub"></a>
+			</div>
+		</div>
+	</footer>
+ </body>
+</html>

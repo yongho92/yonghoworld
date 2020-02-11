@@ -1,0 +1,339 @@
+@CHARSET "UTF-8";
+a {
+	color:#6d6d6d;
+	text-decoration:none;
+}
+a:focus, a:hover, a:active {
+	text-decoration:none;
+}
+
+/*.header-wrap{
+	position: relative;
+    top: 0;
+    max-width: 800px;
+    height: 35px;
+    clear: both;
+    
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position: 97% 100%;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    padding-left: 10px;
+}*/
+.header-wrap span{
+	font-size: 15px;
+	padding-left:10px;
+}
+.header-wrap span #query_time, .header-wrap span .jang_gubun{
+	padding-left:0px;
+}
+
+.header-wrap .time_img{
+	padding-left:5px;
+	vertical-align: middle;
+    display: inline-table;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/img05.png);
+    background-repeat: no-repeat;
+}
+
+.body-wrap{
+	position: relative;
+    max-width: 870px;
+    max-width: 100%;
+    height: 80%;
+    clear: both;
+}
+
+#chart1{
+	margin: 20px 0;
+	width: 770px;
+    height: 280px;
+    position: relative;
+}
+
+#gpDisp{
+}
+
+#gpDisp embed{
+	width:1200px;
+	height:300px;
+}
+
+.data-lists dl dt{
+	padding-left:5px;
+	font-weight: bold;
+}
+
+.data-lists dl dt span{
+	background-image: url(../img/img03.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 0px 0px;
+    width: 15px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right:5px;
+}
+
+.data-lists dl dd{
+	margin: 0;
+}
+
+.chart-legend li span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 0px;
+}
+
+.main_stock_box1{
+	position: relative;
+    width: 870px;
+    margin: 20px 0;
+}
+
+.main_stock_box1 ul{
+	padding: 0px 1px;
+	display: table-cell;
+}
+
+.main_stock_box1 ul li{
+	list-style: none;
+}
+
+.main_stock_box1 ul li span{
+	padding-left: 5px;
+}
+.main_stock_box1_title ul:nth-child(2){
+	width: 275px;
+    padding: 0px 5px;
+    position: absolute;
+    left: 385px;
+    top: 5px;
+    padding: 0px 5px;
+}
+
+
+.main_stock_box1_title ul .main_stock_box1_title1{
+	border: 1px solid #dbdbdb;
+	width: 295px;
+    padding: 5px 20px;
+    height: 33px;
+    background: #323040;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+
+}
+.main_stock_box1_title ul .main_stock_box1_title2{
+	background-color: #fff;
+	width: 295px;
+    height: 60px;
+    text-align: right;
+    font-size: 42px;
+    color: #333;
+    border: 1px solid #dbdbdb;
+    padding: 5px 20px;
+}
+
+.main_stock_box1_title ul .main_stock_box1_title2 .CurJuka{
+	position: absolute;
+    top: 69px;
+    left: 70px;
+	display: inline-block;
+    padding: 3px;
+    margin-right: 22px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ed5647;
+    vertical-align: middle;
+}
+
+.main_stock_box1_title ul .main_stock_box1_contn{
+	padding: 7px 15px;
+	width: 100%;
+}
+
+.main_stock_box1_title ul .main_stock_box1_contn .title{
+	font-size: 97%;
+	font-weight: bold;
+    background-color: #323040;
+    padding: 0px 10px;
+    color: #fff;
+	float: none;
+}
+.main_stock_box1_title ul .main_stock_box1_contn span{
+	padding-left: 30px;
+	float: right;
+}
+
+.main_stock_box1_title ul .main_stock_box1_contn span .up{
+	padding: 0px;
+	float: none;
+	color:#FF4848;
+}
+
+.main_stock_box1_title ul .main_stock_box1_contn span .down{
+	padding: 0px;
+	float: none;
+	color: #2478FF;
+}
+
+table, .tab_content table{
+	width: 95%;
+    margin: 20px 0;
+    border-top: 2px solid #ab0f05;
+    border-spacing: 0;
+    border-right: hidden;
+}
+table tr th{
+    padding: 9px 10px;
+    font-weight: normal;
+    background-color: #f2f2f2;;
+    color: #222;
+    border-left: 1px solid #e1e1e1;
+	border-top: 1px solid #e1e1e1;
+    font-size: 93%;
+}
+table tr th:last-child {border-right: 1px solid #e1e1e1;}
+table tr td:first-child{
+	
+    border-left: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+}
+table tr td:last-child{
+
+    border-right: 1px solid #dbdbdb;
+}
+table tr td{
+	
+	padding: 9px 10px;
+    font-weight: normal;
+    background-color: #ffffff;
+    border-left: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    text-align:right;
+    font-size: 93%;
+
+}
+table tr:hover td {
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+table tr:last-child td{
+	border-bottom: 1px solid #dbdbdb;
+}
+
+#stockInfo, #member_trade, #Hoga{
+	padding: 0 ;
+}
+
+#stockInfo tr th{
+	width: 75px;
+	background: #fcfcfc;
+	border-left: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    color: #333333;
+}
+
+#stockInfo tr:last-child th{
+	border-bottom: 1px solid #dbdbdb;
+}
+
+#stockInfo tr td{
+	width: 110px;
+}
+
+#stockInfo tr th:first-child{
+	width: 160px;
+}
+
+#member_trade tr td, #Hoga tr td{
+	text-align:center;
+}
+
+table tr td span{margin-right:5px;}
+
+table tr td .up{
+	color:#FF4848;
+}
+table tr td .down{
+	color:#2478FF;
+}
+table tr td .bohab{
+	margin-right:12px;
+}
+
+.footer-wrap{
+	position: relative;
+    width: 100%;
+    clear: both;
+}
+
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-left: 1px solid #e1e1e1;
+	width: 98%;
+	margin-left: 0px;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #D6D6D6;
+	border-left: none;
+	margin-bottom: -1px;
+	overflow: hidden;
+	position: relative;
+	background: #F6F6F6;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 0 20px;
+	border: 1px solid #fff;
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #EAEAEA;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	font-weight:bold;
+	border-bottom: 1px solid #fff;
+}
+
+b_container {
+	border: 1px solid #999;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; width: 100%;
+	background: #fff;
+}
+.tab_content {
+	padding: 25px 0;
+	width: 870px;
+}
+@media screen and (max-width: 640px){
+	table tr td span{
+		margin-right:2px;
+	}
+	table tr td .bohab{
+		margin-right:5px;
+	}
+}

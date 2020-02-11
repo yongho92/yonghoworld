@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>MYCELEB</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<script type="text/javascript" src="../common/js/jquery-3.3.0.min.js"></script>
+	<script type="text/javascript" src="../common/js/script.js"></script>
+	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+</head>
+<body>	
+
+	<header>
+		<div class="head">
+			<h1><a href="../main/main.html"><img src="../images/common/logo_s.png" alt="myceleb"></a></h1>
+			<ul>
+				<li class="mBtn"><a href="#"><img src="../images/common/menu_s.png" alt="메뉴펼치기"></a></li>
+			</ul>
+			<div class="menuBox">
+	<button type="button">닫기</button>
+	<ul>
+		<li><a href="#"><span>셀럽리스트</span></a>
+			<ul>
+				<li><a href="../celebList/list.html">셀럽리스트</a></li>
+				<li><a href="../celebList/list_view.html">셀럽리스트 상세페이지</a></li>
+				<li><a href="../celebList/video.html">영상요청</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>회원가입(사용자)</span></a>
+			<ul>
+				<li><a href="../join/user_join.html">회원가입 1단계</a></li>
+				<li><a href="../join/user_join2.html">회원가입 2단계</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>회원가입(셀럽)</span></a>
+			<ul>
+				<li><a href="../join/celeb_join5.html">셀럽 회원가입 1단계</a></li>
+				<li><a href="../join/celeb_join4.html">셀럽 회원가입 2단계</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>마이페이지</span></a>
+			<ul>
+				<li><a href="../mypage/mypage.html">마이페이지</a></li>
+				<li><a href="../mypage/share_link.html">공유링크</a></li>
+				<li><a href="../mypage/reservation.html">예약리스트</a></li>
+				<li><a href="../mypage/reservation_view.html">예약리스트 상세페이지</a></li>
+				<li><a href="../mypage/welcome_video.html">프로필 & 계정관리</a></li>
+				<li><a href="../mypage/proceeds.html">수익금관리</a></li>
+				<li><a href="../mypage/invite_program.html">초대프로그램</a></li>
+				<li><a href="../mypage/mypage_general.html">일반 사용자 마이페이지</a></li>
+				<li><a href="../mypage/general_view.html">일반 사용자 상세페이지(별점주기)</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>고객센터</span></a>
+			<ul>
+				<li><a href="../mypage/faq.html">FAQ</a></li>
+				<li><a href="../mypage/contact.html">고객문의</a></li>
+			</ul>
+		</li>
+		<li><a href="#"><span>로그인</span></a>
+			<ul>
+				<li><a href="../join/login.html">로그인</a></li>
+				<li><a href="../join/pw.html">비밀번호 찾기</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+		</div>
+	</header>
+	<section class="joinH joinH1 on">
+		<article class="cl_join borx">
+			<div class="wrap">
+				<dl>
+					<dt>마이셀럽 셀럽가입 신청</dt>
+					<dd>셀럽으로 등록을 원하시면 아래 내용을 작성해서 제출해 주세요</dd>
+				</dl>
+			</div>
+		</article>
+		<article class="userJ2 cl_join2">
+			<div class="wrap">
+				<form name="fIpt" method="post" action="">
+					<div class="video_t">
+						<div class="iptBox">
+							<h3 class="stitle">이름 / 닉네임</h3>
+							<label for="name" class="clearN">이름 / 닉네임</label>
+							<input type="text" id="name" name="name" placeholder="이름 / 닉네임을 입력해주세요">
+						</div>
+						<div class="iptBox">
+							<h3 class="stitle">이메일</h3>
+							<label for="email" class="clearN">이메일</label>
+							<input type="text" id="email" name="email" placeholder="이메일 주소를 입력해주세요">
+						</div>
+						<div class="iptBox">
+							<h3 class="stitle">전화번호<span>(공개하지 않음)</span></h3>
+							<label for="tel" class="clearN">전화번호(공개하지 않음)</label>
+							<input type="text" id="tel" name="tel" placeholder="전화번호를 입력해주세요요">
+						</div>
+						<div class="iptBox">
+							<h3 class="stitle">활동 채널</h3>
+							<select name="" id="" class="selectB">
+								<option value="">유튜브</option>
+								<option value="">유튜브</option>
+								<option value="">유튜브</option>
+								<option value="">유튜브</option>
+							</select>						
+						</div>
+						<div class="iptBox">
+							<h3 class="stitle">채널 주소</h3>
+							<label for="ch" class="clearN">채널 주소</label>
+							<input type="text" id="ch" name="ch" placeholder="채널 주소를 입력해주세요">
+						</div>
+						<div class="iptBox iptBox2">
+							<h3 class="stitle">구독자(팔로워) 수</h3>
+							<label for="fa" class="clearN">구독자(팔로워) 수</label>
+							<input type="text" id="fa" name="fa" placeholder="구독자(팔로워) 수를 입력해주세요">
+						</div>
+						<a href="#" class="vBtn next1">다음</a>
+					</div>
+				</form>
+			</div>
+		</article>
+	</section>
+	<section class="joinH joinH2">
+		<article class="cl_join borx">
+			<div class="wrap">
+				<dl>
+					<dt>마이셀럽 셀럽가입 신청</dt>
+					<dd>얼굴 위주의 선명한 사진을 등록해 주세요</dd>
+				</dl>
+			</div>
+		</article>
+		<article class="cl_join2 proF">
+			<div class="wrap">
+				<p>프로필 사진</p>
+				<div class="proF_img on">
+					<button type="button" id="btn-upload">image</button>
+					<img src="../images/contents/profile.png" alt="" id="proimgf"/>
+					<input type="file" id="proimg" name="proimg" class="proimg" onchange="changeValue(this)"/>
+					<p>사진 등록</p>
+				</div>
+				<a href="#" class="vBtn next2">다음</a>
+			</div>
+		</article>
+	</section>
+	<section class="joinH joinH3">
+		<article class="cl_join borx">
+			<div class="wrap">
+				<dl>
+					<dt>마이셀럽 셀럽가입 신청</dt>
+					<dd>당신의 영상 메세지에 팬이 얼마를 지불해야 하나요?</dd>
+				</dl>
+			</div>
+		</article>
+		<article class="cl_join2 proF price">
+			<div class="wrap">
+				<form name="fIpt" method="post" action="">
+					<p>가격 설정</p>
+					<span class="pri_ipt">
+						<label for="mon" class="clearN">가격 설정</label>
+						<input type="text" id="mon" name="mon" numberonly="" class="pri_txt">		
+						<button type="button" class="sch_del" style="display: none;">입력 내용 삭제</button>
+					</span>
+					<!--<p class="pri_txt"></p> -->
+					<!-- <span class="tpr">3만 원</span> -->
+					<a href="celeb_join4.html" class="vBtn next3">제출</a>
+				</form>
+			</div>
+		</article>
+	</section>
+
+	<footer>
+		<div class="wrap">
+			<div class="right">
+				<p>새로운 소식을 받아보세요!</p>
+				<p>새로운 스타들의 등록 알림을 받아보세요. </p>
+				<label for="" class="clearN">이메일</label>
+				<input type="text" id="email" name="email" placeholder="이메일을 입력하세요"/>
+				<button type="button">입력</button>
+			</div>
+			<div class="left">
+				<a href="#" class="star">스타등록</a>
+				<a href="#" class="btn">로그인</a>
+				<a href="#" class="btn">PC화면</a>
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+				<p>Copyright (C) 2019 <span>MYCELEB</span> All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

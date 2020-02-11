@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>피에스텍(주)</title>
+  <link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/contents.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/stockinfo.css"/>
+  <script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../common/js/swiper.min.js"></script>
+  <script type="text/javascript" src="../common/js/common.js"></script>
+  <script type="text/javascript" src="../common/js/contents.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://asp1.krx.co.kr/inc/js/asp_chart.js"></script>
+  <script src="../common/js/jquery.rwdImageMaps.js"></script>
+ </head>
+ <body>
+  <div id="wrap">
+  	<div id="header">
+		<div class="head">
+			<h1><a href="../main/main.html"><img src="../images/common/logo.png" alt="pstec"/></a></h1>
+			<div class="menu">
+				<ul>
+					<li><a href="../intro/company.html">회사소개</a>
+						<ul>
+							<li><a href="../intro/company.html">회사개요</a></li>
+							<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+							<li><a href="../intro/subsidiary.html">관계사</a></li>
+							<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+							<li><a href="../intro/map.html">사업장소개</a></li>
+							<li><a href="../intro/jobnotice.html">채용정보</a></li>
+						</ul>
+					</li>
+					<li><a href="../business/measure.html">사업분야</a>
+						<ul>
+							<li><a href="../business/measure.html">계량계측사업</a></li>
+							<li><a href="../business/components.html">자동차부품사업</a></li>
+						</ul>					
+					</li>
+					<li><a href="../product/product.html">제품소개</a>
+						<ul>
+							<li><a href="../product/product_view.html">전력량계</a></li>
+							<li><a href="../product/product_view.html">설미미터</a></li>
+							<li><a href="../product/product_view.html">전기차충전기</a></li>
+							<li><a href="../product/product_view.html">기타제품</a></li>
+						</ul>						
+					</li>
+					<li><a href="../customer/notice.html">고객지원</a>
+						<ul>
+							<li><a href="../customer/notice.html">공지사항</a></li>
+							<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+							<li><a href="../customer/contact.html">부서별 연락처</a></li>
+						</ul>						
+					</li>
+					<li><a href="../information/ir.html">IR</a>
+						<ul>
+							<li><a href="../information/ir.html">IR 자료실</a></li>
+							<li><a href="../information/general.html">공시정보</a></li>
+							<li><a href="../information/stock.html">주가정보</a></li>
+							<li><a href="../information/finance.html">재무정보</a></li>
+						</ul>					
+					</li>
+				</ul>
+			</div>
+			<div class="lang">
+				<ul>
+					<li><a href="#" class="on">KOR</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>				
+			</div>
+			<div class="m_menu">
+				<button type="button" class="more">모바일메뉴보기</button>
+				<div class="m_gnb">
+					<div class="g_top">
+						<a href="#" class="on first">KOR</a>
+						<a href="#">ENG</a>
+						<button type="button">모바일메뉴닫기</button>
+					</div>
+					<div class="g_bot">
+						<ul>
+							<li><a href="javascript:void(0);" class="d2_tit">회사소개</a>
+								<ul class="depth2">
+									<li><a href="../intro/company.html">회사개요</a></li>
+									<li><a href="../intro/ceo.html">CEO 인사말</a></li>
+									<li><a href="../intro/subsidiary.html">관계사</a></li>
+									<li><a href="../intro/awards.html">수상&amp;인증</a></li>
+									<li><a href="../intro/map.html">사업장소개</a></li>
+									<li><a href="../intro/jobnotice.html">채용정보</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">사업분야</a>
+								<ul class="depth2">
+									<li><a href="../business/measure.html">계량계측사업</a></li>
+									<li><a href="../business/components.html">자동차부품사업</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">제품소개</a>
+								<ul class="depth2">
+									<li><a href="../product/product_view.html">전력량계</a></li>
+									<li><a href="../product/product_view.html">설미미터</a></li>
+									<li><a href="../product/product_view.html">전기차충전기</a></li>
+									<li><a href="../product/product_view.html">기타제품</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">고객지원</a>
+								<ul class="depth2">
+									<li><a href="../customer/notice.html">공지사항</a></li>
+									<li><a href="../customer/manual.html">사용설명서 및 조견표</a></li>
+									<li><a href="../customer/contact.html">부서별 연락처</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="d2_tit">IR</a>
+								<ul class="depth2">
+									<li><a href="../information/ir.html">IR 자료실</a></li>
+									<li><a href="../information/general.html">공시정보</a></li>
+									<li><a href="../information/stock.html">주가정보</a></li>
+									<li><a href="../information/finance.html">재무정보</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+	<div id="container" class="container">
+		<div class="s_title s_title6">
+			<p>IR</p>
+		</div>
+		<div class="loaction">
+			<div class="loac_box">
+				<ul>
+					<li class="home"><a href="../main/main.html">홈</a></li>
+					<li class="dep dep1">
+						<a href="javascript:;">IR</a>
+						<ul>
+							<li><a href="../intro/company.html">회사소개</a></li>
+							<li><a href="../business/measure.html">사업분야</a></li>
+							<li><a href="../product/product.html">제품소개</a></li>
+							<li><a href="../customer/notice.html">고객지원</a></li>
+							<li><a href="../information/ir.html">IR</a></li>
+						</ul>
+					</li>
+					<li class="dep dep2">
+						<a href="javascript:;">주가정보</a>
+						<ul>
+							<li><a href="../information/ir.html">IR 자료실</a></li>
+							<li><a href="../information/general.html">공시정보</a></li>
+							<li><a href="../information/stock.html">주가정보</a></li>
+							<li><a href="../information/finance.html">재무정보</a></li>
+						</ul>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content cont_pdb100">
+			<div class="stock">
+				<h4 class="sub_tit">주가정보</h4>
+				<div class="header-wrap">
+					<h5 class="dot_tit">실시간 시세</h5><span>2019/07/19 17:29:35 기준(장마감)</span>
+					<a href="javascript:;" class="onload">새로고침</a>
+				</div>
+				<div id="gpDisp"></div>
+				<div class="stock_list">
+					<h5 class="dot_tit">주가정보</h5>
+					<table class="list_l">
+						<caption></caption>
+						<tbody>
+							<tr>
+								<td colspan="2" class="list_txt1">A002230<span>피에스텍</span></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="list_txt2"><span class="CurJuka">현재가</span> <strong>4,100</strong></td>
+							</tr>
+							<tr>
+								<td colspan="2">전일대비 <strong class="num">50(1.16%)</strong></td>
+							</tr>
+							<tr>
+								<td><span class="left">거래량</span> <strong class="right">31,305</strong></td>
+								<td><span class="left">거래대금</span> <strong class="right">137,066,615</strong></td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="list_r">
+						<tr>
+							<th>시가</th>
+							<td>4,000</td>
+							<th colspan="2">상한가</th>
+							<td>5,250</td>
+						</tr>
+						<tr>
+							<th>고가</th>
+							<td>4,100</td>
+							<th colspan="2">하한가</th>
+							<td>2,830</td>
+						</tr>
+						<tr>
+							<th>저가</th>						
+							<td>4,000</td>
+							<th colspan="2">액면가</th>
+							<td>500</td>
+						</tr>
+						<tr>
+							<th>PER</th>
+							<td>-256.25</td>
+							<th rowspan="2" class="th_w">52주<br>(종가기준)</th>
+							<th class="th_w">최고</th>
+							<td>5,870</td>
+						</tr>
+						<tr>
+							<th>상장주식수</th>
+							<td>19,669,243</td>
+							<th class="th_w">최저</th>
+							<td>3,985</td>
+						</tr>
+					</table>
+				</div>
+				<div class="stock_t data_list">
+					<h5 class="dot_tit">호가</h5>
+					<table id="Hoga">
+						<caption>호가</caption>
+						<tr>
+							<th>매도잔량</th>
+							<th>호가</th>
+							<th>매수잔량</th>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>4,110</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>4,105</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>143</td>
+							<td>4,100</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>4,065</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>4,060</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>4,055</td>
+							<td>1,191</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>164</td>
+							<td>잔량합계</td>
+							<td>1,321</td>
+						</tr>
+					</table>					
+				</div>
+				<div class="stock_t data_list">
+					<h5 class="dot_tit">시간대별체결가</h5>
+					<table>
+						<caption>시간대별체결가</caption>
+						<tr>
+							<th>시간</th>
+							<th>체결가</th>
+							<th>전일대비</th>
+							<th>매도호가</th>
+							<th>매수호가</th>
+							<th>매수잔량</th>
+						</tr>
+						<tr>
+							<td>15:30:30</td>
+							<td>4,100</td>
+							<td>60</td>
+							<td>4,100</td>
+							<td>4,065</td>
+							<td>200</td>
+						</tr>
+						<tr>
+							<td>15:19:30</td>
+							<td>4,100</td>
+							<td>60</td>
+							<td>4,100</td>
+							<td>4,055</td>
+							<td>700</td>
+						</tr>
+						<tr>
+							<td>15:08:00</td>
+							<td>4,100</td>
+							<td>60</td>
+							<td>4,100</td>
+							<td>4,050</td>
+							<td>1,000</td>
+						</tr>
+						<tr>
+							<td>15:06:30</td>
+							<td>4,075</td>
+							<td>35</td>
+							<td>4,080</td>
+							<td>4,040</td>
+							<td>499</td>
+						</tr>
+						<tr>
+							<td>15:04:40</td>
+							<td>4,070</td>
+							<td>30</td>
+							<td>4,070</td>
+							<td>4,040</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>15:01:10</td>
+							<td>4,050</td>
+							<td>10</td>
+							<td>4,070</td>
+							<td>4,040</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>15:00:50</td>
+							<td>4,050</td>
+							<td>10</td>
+							<td>4,050</td>
+							<td>4,035</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>15:00:20</td>
+							<td>4,050</td>
+							<td>10</td>
+							<td>4,070</td>
+							<td>4,050</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>15:00:00</td>
+							<td>4,050</td>
+							<td>10</td>
+							<td>4,070</td>
+							<td>4,050</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>14:59:40</td>
+							<td>4,050</td>
+							<td>10</td>
+							<td>4,070</td>
+							<td>4,050</td>
+							<td>7</td>
+						</tr>
+					</table>				
+				</div>
+				<div class="stock_t data_list">
+					<h5 class="dot_tit">회원사별거래</h5>
+					<table id="member_trade">
+						<caption>회원사별거래</caption>
+						<tr>
+							<th colspan="2">매도상위</th>
+							<th colspan="2">매수상위</th>
+						</tr>
+						<tr>
+							<th>증권사</th>
+							<th>거래량</th>
+							<th>증권사</th>
+							<th>거래량</th>
+						</tr>
+						<tr>
+							<td>하이증권</td>
+							<td>10,038</td>
+							<td>대신증권</td>
+							<td>9,400</td>
+						</tr>
+						<tr>
+							<td>키움증권</td>
+							<td>4,438</td>
+							<td>미래에셋대우</td>
+							<td>5,276</td>
+						</tr>
+						<tr>
+							<td>대신증권</td>
+							<td>2,255</td>
+							<td>키움증권</td>
+							<td>1,419</td>
+						</tr>
+						<tr>
+							<td>미래에셋대우</td>
+							<td>527</td>
+							<td>신한투자</td>
+							<td>1,398</td>
+						</tr>
+						<tr>
+							<td>신한투자</td>
+							<td>500</td>
+							<td>삼성증권</td>
+							<td>567</td>
+						</tr>
+					</table>			
+				</div>
+				<div class="stock_t data_list">
+					<h5 class="dot_tit">일자별시세</h5>
+					<table id="tradedPrice_day">
+						<caption>일자별시세</caption>
+						<tr>
+							<th>일자</th>
+							<th>종가</th>
+							<th>전일대비</th>
+							<th>시가</th>
+							<th>고가</th>
+							<th>저가</th>
+							<th>거래량</th>
+							<th>거래대금</th>
+						</tr>
+						<tr>
+							<td>19/07/19</td>
+							<td>4,100</td>
+							<td>60</td>
+							<td>4,000</td>
+							<td>4,100</td>
+							<td>4,000</td>
+							<td>19,202</td>
+							<td>77,543,785</td>
+						</tr>
+						<tr>
+							<td>19/07/18</td>
+							<td>4,040</td>
+							<td>10</td>
+							<td>4,115</td>
+							<td>4,115</td>
+							<td>3,970</td>
+							<td>14,161</td>
+							<td>56,634,835</td>
+						</tr>
+						<tr>
+							<td>19/07/17</td>
+							<td>4,030</td>
+							<td>15</td>
+							<td>4,000</td>
+							<td>4,105</td>
+							<td>3,970</td>
+							<td>32,515</td>
+							<td>129,852,730</td>
+						</tr>
+						<tr>
+							<td>19/07/16</td>
+							<td>4,045</td>
+							<td>60</td>
+							<td>3,955</td>
+							<td>4,100</td>
+							<td>3,955</td>
+							<td>43,035</td>
+							<td>172,241,345</td>
+						</tr>
+						<tr>
+							<td>19/07/15</td>
+							<td>3,985</td>
+							<td>140</td>
+							<td>4,120</td>
+							<td>4,125</td>
+							<td>3,970</td>
+							<td>90,691</td>
+							<td>362,554,740</td>
+						</tr>
+						<tr>
+							<td>19/07/12</td>
+							<td>4,125</td>
+							<td>10</td>
+							<td>4,160</td>
+							<td>4,160</td>
+							<td>4,000</td>
+							<td>12,585</td>
+							<td>51,534,840</td>
+						</tr>
+						<tr>
+							<td>19/07/11</td>
+							<td>4,135</td>
+							<td>30</td>
+							<td>4,090</td>
+							<td>4,155</td>
+							<td>4,090</td>
+							<td>11,243</td>
+							<td>46,299,635</td>
+						</tr>
+						<tr>
+							<td>19/07/10</td>
+							<td>4,105</td>
+							<td>55</td>
+							<td>4,150</td>
+							<td>4,185</td>
+							<td>4,030</td>
+							<td>37,655</td>
+							<td>155,070,165</td>
+						</tr>
+						<tr>
+							<td>19/07/09</td>
+							<td>4,160</td>
+							<td>80</td>
+							<td>4,210</td>
+							<td>4,320</td>
+							<td>4,135</td>
+							<td>17,050</td>
+							<td>71,446,910</td>
+						</tr>
+						<tr>
+							<td>19/07/08</td>
+							<td>4,240</td>
+							<td>150</td>
+							<td>4,390</td>
+							<td>4,390</td>
+							<td>4,210</td>
+							<td>20,494</td>
+							<td>87,220,645</td>
+						</tr>
+					</table>			
+				</div>
+			</div>
+			<script>
+				onChart(680, 205, '002230');
+			</script>
+		</div>
+		<div class="footer-wrap"></div>
+		<div class="page_Btn page_Btn2">
+			<ul class="quick quick2">
+				<li class="on top"><a href="">top</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="foot_box foot_box2">
+		<div id="footer">
+			<div class="foot">
+				<p class="f_logo">피에스텍(주)</p>
+				<div class="addr">
+					<ul>
+						<li>
+							<p>본<em>사</em> : 서울특별시 성동구 왕십리로 46(성수동1가)</p>
+							<p>TEL : 02-3408-1700</p>
+							<p>FAX : 02-499-0624</p>
+						</li>
+						<li>
+							<p>김포사업장 : 경기도 김포시 양촌읍 황금3로7번길 80</p>
+							<p>TEL : 031-988-2661</p>
+							<p>FAX : 031-988-2656</p>
+						</li>
+						<li>
+							<p>광천사업장 : 충청남도 홍성군 광천읍 광천로430번길 41-113</p>
+							<p>TEL : 041-642-7822</p>
+							<p>FAX : 041-642-2658</p>
+						</li>
+						<li>
+							<p>나주사업장 : 전라남도 나주시 왕곡면 혁신산단7길 31-7</p>
+							<p>TEL : 061-817-0505</p>
+							<p>FAX : 061-817-0506</p>
+						</li>
+					</ul>
+					<p class="mob_add">서울특별시 성동구 왕십리로 46(성수동1가)<span>TEL.02-3408-1700 FAX.02-499-0624</span></p>
+				</div>
+				<div class="family">
+					<button type="button">FAMILY SITE</button>
+					<ul>
+						<li><a href="#">피에스텍(주)</a></li>
+						<li><a href="#">서평택탱크터미널(주)</a></li>
+						<li><a href="#">대정장학재단</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="copy">
+			<p>&copy;2019. POONSUNG  ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>

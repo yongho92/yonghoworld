@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>MYCELEB</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<script type="text/javascript" src="../common/js/jquery-3.3.0.min.js"></script>
+	<script type="text/javascript" src="../common/js/script.js"></script>
+	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+</head>
+<body>	
+	<style>
+		.proimg{width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    line-height: 0;
+    background: none;
+    border: none;
+    color: #fff;}
+	</style>
+	<section>
+		<article class="cl_join borx">
+			<div class="wrap">
+				<dl>
+					<dt>마이셀럽 셀럽가입 신청</dt>
+					<dd>얼굴 위주의 선명한 사진을 등록해 주세요</dd>
+				</dl>
+			</div>
+		</article>
+		<article class="cl_join2 proF">
+			<div class="wrap">
+				<p>프로필 사진</p>
+				<div class="proF_img on">
+					<button type="button" id="btn-upload">image</button>
+					<img src="../images/contents/profile.png" alt="" id="proimgf"/>
+					<input type="file" id="proimg" name="proimg" class="proimg" onchange="changeValue(this)"/>
+					<p>사진 등록</p>
+				</div>
+				<a href="celeb_join3.html" class="vBtn">다음</a>
+			</div>
+		</article>
+	</section>
+
+	<footer>
+		<div class="wrap">
+			<div class="right">
+				<p>새로운 소식을 받아보세요!</p>
+				<p>새로운 스타들의 등록 알림을 받아보세요. </p>
+				<label for="" class="clearN">이메일</label>
+				<input type="text" id="email" name="email" placeholder="이메일을 입력하세요"/>
+				<button type="button">입력</button>
+			</div>
+			<div class="left">
+				<a href="#" class="star">스타등록</a>
+				<a href="#" class="btn">로그인</a>
+				<a href="#" class="btn">PC화면</a>
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+				<p>Copyright (C) 2019 <span>MYCELEB</span> All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

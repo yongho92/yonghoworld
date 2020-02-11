@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>피에스텍(주)</title>
+  <link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+  <script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../common/js/swiper.min.js"></script>
+  <!--<script type="text/javascript" src="common/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>-->
+  <script>
+  $(function(){
+		//contact
+		$('.contact .pos_box .pin2').hover(function(){
+			var $this = $(this);
+
+			$('.contact .pos_box3 .comp_map').toggleClass('on');
+			$(this).siblings('div').toggleClass('on');
+
+		});
+	});
+  </script>
+ </head>
+ <body>
+  <div id="wrap">
+  	<div id="header">
+		<div class="head">
+			<h1><img src="../images/common/logo.png" alt="pstec"/></h1>
+			<div class="menu">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">사업분야</a></li>
+					<li><a href="#">제품소개</a></li>
+					<li><a href="#">고객지원</a></li>
+					<li><a href="#">IR</a></li>
+				</ul>
+			</div>
+			<div class="lang">
+				<ul>
+					<li><a href="#" class="on">KOR</a></li>
+					<li><a href="#">ENG</a></li>
+				</ul>				
+			</div>
+			<div class="m_menu">
+				<button type="button" class="more">모바일메뉴보기</button>
+				<div class="m_gnb">
+					<div class="g_top">
+						<a href="#" class="on first">KOR</a>
+						<a href="#">ENG</a>
+						<button type="button">모바일메뉴닫기</button>
+					</div>
+					<div class="g_bot">
+						<ul>
+							<li><strong class="d2_tit">회사소개</strong>
+								<ul class="depth2">
+									<li><a href="#">회사개요</a></li>
+									<li><a href="#">경영진 인사말</a></li>
+									<li><a href="#">관계사</a></li>
+									<li><a href="#">수상&amp;인증</a></li>
+									<li><a href="#">사업장소개</a></li>
+									<li><a href="#">채용정보</a></li>
+								</ul>
+							</li>
+							<li><strong>사업분야</strong>
+								<ul class="depth2">
+									<li><a href="#">회사개요</a></li>
+									<li><a href="#">경영진 인사말</a></li>
+									<li><a href="#">관계사</a></li>
+									<li><a href="#">수상&amp;인증</a></li>
+									<li><a href="#">사업장소개</a></li>
+									<li><a href="#">채용정보</a></li>
+								</ul>
+							</li>
+							<li><strong>제품소개</strong>
+								<ul class="depth2">
+									<li><a href="#">회사개요</a></li>
+									<li><a href="#">경영진 인사말</a></li>
+									<li><a href="#">관계사</a></li>
+									<li><a href="#">수상&amp;인증</a></li>
+									<li><a href="#">사업장소개</a></li>
+									<li><a href="#">채용정보</a></li>
+								</ul>
+							</li>
+							<li><strong>고객지원</strong>
+								<ul class="depth2">
+									<li><a href="#">회사개요</a></li>
+									<li><a href="#">경영진 인사말</a></li>
+									<li><a href="#">관계사</a></li>
+									<li><a href="#">수상&amp;인증</a></li>
+									<li><a href="#">사업장소개</a></li>
+									<li><a href="#">채용정보</a></li>
+								</ul>
+							</li>
+							<li><strong>IR</strong>
+								<ul class="depth2">
+									<li><a href="#">회사개요</a></li>
+									<li><a href="#">경영진 인사말</a></li>
+									<li><a href="#">관계사</a></li>
+									<li><a href="#">수상&amp;인증</a></li>
+									<li><a href="#">사업장소개</a></li>
+									<li><a href="#">채용정보</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="Allbox Allbox1 swiper-container0">
+			<div class="visual_slide swiper-wrapper">
+				<div class="slide slide1 swiper-slide">
+					<div class="visual_txt">
+						<div class="bord_box">
+							<h2><span>Lead change</span>Create innovation</h2>
+							<p>“변화를 이끌어 진정한 혁신을  창조하는 불굴의 도전정신으로<span>더 나은 세상을 만드는 <strong>세계최고의 기업</strong>으로 성장하겠습니다.”</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide1 swiper-slide">
+					<div class="visual_txt">
+						<div class="bord_box">
+							<h2><span>Lead change</span>Create innovation</h2>
+							<p>“변화를 이끌어 진정한 혁신을  창조하는 불굴의 도전정신으로<span>더 나은 세상을 만드는 <strong>세계최고의 기업</strong>으로 성장하겠습니다.”</span></p>
+						</div>					
+					</div>
+				</div>
+				<div class="slide slide1 swiper-slide">
+					<div class="visual_txt">
+						<div class="bord_box">
+							<h2><span>Lead change</span>Create innovation</h2>
+							<p>“변화를 이끌어 진정한 혁신을  창조하는 불굴의 도전정신으로<span>더 나은 세상을 만드는 <strong>세계최고의 기업</strong>으로 성장하겠습니다.”</span></p>
+						</div>					
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="s_Btn">
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		  <script>
+			var swiper = new Swiper('.swiper-container0', {
+			  centeredSlides: true,
+			  loop:true,
+			  autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			  },
+			  pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			  simulateTouch:false,
+			});
+
+		  </script>
+		  <div class="scroll">
+		  	<button type="button">scroll</button>
+		  </div>
+		</div>
+		<div class="Allbox Allbox2" id="main2">
+			<div class="content">
+				<h3>Our <strong>Business</strong></h3>
+				<div class="business">
+					<dl class="cont_tit">
+						<dt>CHALLENGE TO THE WORLD</dt>
+						<dd>기술혁신과 변화를 통한 창조적 기술로 <span>인류의 행복에 기여하는 기업입니다.</span></dd>
+					</dl>
+					<div class="busi_box">
+						<div class="busi_l busi_l1">
+							<p>MEASURE</p>
+							<a href="#"><strong>계량계측사업</strong> 바로가기</a>
+						</div>
+						<div class="busi_l busi_l2">
+							<p>COMPONENTS</p>
+							<a href="#"><strong>자동차부품사업</strong> 바로가기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		  <div class="scroll">
+			<button type="button">scroll</button>
+		  </div>
+		</div>
+		<div class="Allbox Allbox3" id="main3">
+			<div class="content">
+				<h3><strong class="color1">Customer</strong></h3>
+				<div class="customer">
+					<dl class="cont_tit cont_tit2">
+						<dt>MAKING A BETTER TOMORROW</dt>
+						<dd>고객과 함께 성장하는 기업 PSTEC</dd>
+					</dl>
+					<div class="cut_list swiper-container1">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="cut_box">
+									<div class="cut_tit cut_tit1">
+										<p>수상&amp;인증</p>
+									</div>
+									<div class="cut_txt">
+										<p>피에스텍(주)만의 다양한 경험을 통해<span>최고의 기술을 제공합니다.</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cut_box">
+									<div class="cut_tit cut_tit2">
+										<p>사용설명 조견표</p>
+									</div>
+									<div class="cut_txt">
+										<p>피에스텍(주) 사용설명 조견표를<span>제공합니다.</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="cut_box">
+									<div class="cut_tit cut_tit3">
+										<p>부서별 연락처</p>
+									</div>
+									<div class="cut_txt cut_txt2">
+										<p><span>대표번호 : 031-988-2661</span></p>
+										<p><span>일반 A/S : 02-3408-1771</span></p>
+										<p><span>한전 A/S : 02-3408-1706</span></p>
+										<p><span>제품문의 : 02-3408-1741</span></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		    <div class="scroll">
+				<button type="button">scroll</button>
+		    </div>
+		</div>
+		<div class="Allbox Allbox4" id="main4">
+			<div class="contact_a">
+				<div class="content">
+					<h3><strong>Contact</strong></h3>
+					<div class="contact">
+						<div class="map">
+							<img src="../images/contents/map.png" alt=""/>
+						</div>
+						<div class="pos_box pos_box1">
+							<div class="comp_map posm1">
+								<h5>김포사업장<a href="#">자세히보기</a></h5>
+								<p>경기도 김포시 양촌읍 황금3로7번길 80</p>
+							</div>
+							<div class="pin pin2">
+								<a href="#"><img src="../images/contents/pin.png" alt=""/></a>
+							</div>
+						</div>
+						<div class="pos_box pos_box2">
+							<div class="comp_map comp_map2 posm2">
+								<h5>나주사업장<a href="#">자세히보기</a></h5>
+								<p>전라남도 나주시 왕곡면 혁신산단7길 31-7</p>
+							</div>
+							<div class="pin pin2">
+								<a href="#"><img src="../images/contents/pin.png" alt=""/></a>
+							</div>
+						</div>
+						<div class="pos_box pos_box0  pos_box3">
+							<div class="comp_map posm3 on">
+								<h5>서울본사<a href="#">자세히보기</a></h5>
+								<p>서울 특별시 성동구 왕십리로 46(성수동1가)</p>
+							</div>
+							<div class="pin">
+								<a href="#"><img src="../images/contents/pin_on.png" alt=""/></a>
+								<div class="ps_comp">
+									<img src="../images/contents/logo.png" alt=""/>
+									<span>본사</span>
+								</div>
+							</div>
+						</div>
+						<div class="pos_box pos_box0 pos_box4">
+							<div class="comp_map comp_map3 posm4">
+								<h5>광천사업장<a href="#">자세히보기</a></h5>
+								<p>충청남도 홍성군 광천읍 광천로430번길 41-113</p>
+							</div>	
+							<div class="pin pin2">
+								<a href="#"><img src="../images/contents/pin.png" alt=""/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot_box">
+				<div id="footer">
+					<div class="foot">
+						<p class="f_logo">피에스텍(주)</p>
+						<div class="addr">
+							<ul>
+								<li>
+									<p>본<em>사</em> : 서울특별시 성동구 왕십리로 46(성수동1가)</p>
+									<p>TEL : 02-3408-1700</p>
+									<p>FAX : 02-499-0624</p>
+								</li>
+								<li>
+									<p>김포사업장 : 경기도 김포시 양촌읍 황금3로7번길 80</p>
+									<p>TEL : 031-988-2661</p>
+									<p>FAX : 031-988-2656</p>
+								</li>
+								<li>
+									<p>광천사업장 : 충청남도 홍성군 광천읍 광천로430번길 41-113</p>
+									<p>TEL : 041-642-7822</p>
+									<p>FAX : 041-642-2658</p>
+								</li>
+								<li>
+									<p>나주사업장 : 전라남도 나주시 왕곡면 혁신산단7길 31-7</p>
+									<p>TEL : 061-817-0505</p>
+									<p>FAX : 061-817-0506</p>
+								</li>
+							</ul>
+							<p>서울특별시 성동구 왕십리로 46(성수동1가)<span>TEL.02-3408-1700 FAX.02-499-0624</span></p>
+						</div>
+						<div class="family">
+							<ul>
+								<li class="on"><a href="javascript:void(0);">FAMILY SITE</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="copy">
+					<p>©2019. POONSUNG  all rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> -->
+	<meta name="viewport" content="width=device-width, user-scalable=yes, target-densitydpi=device-dpi">
+	<meta name="format-detection" content="telephone=no">
+	<title>한국로슈</title>
+	<link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/jquery.mCustomScrollbar.css">
+	<script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../common/js/fullpage307.js"></script>
+	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../common/js/main.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../common/js/script.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156255190-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	//gtag('config', 'UA-156255190-1');
+	gtag(	'config',
+			'UA-156255190-1',
+			{'linker':	{'domains':
+							[
+								'flu.or.kr',
+								'influenza.or.kr',
+								'influenza.co.kr',
+								'fighttheflu.co.kr',
+								'xn--2s2bp82c.com',
+								'xn--439a49l.com',
+								'xn--439a49l.net'
+							]
+						}
+			}
+	);
+</script>
+
+</head>
+<body class="main_a">
+	<header>
+		<div class="head">
+			<a href="#" class="menu">메뉴</a>
+			<h1><a href="../main/main.html"><img src="../images/common/logo.png" alt=""></a></h1>
+		</div>
+		<div class="menu_on">
+			<div class="menuD">
+				<div class="menuT">
+					<button type="button">닫기</button>
+					<ul>
+						<li><a href="../main/main.html">HOME</a></li>
+						<li><a href="../flu_info/flu_info.html">플루란 무엇인가요?</a></li>
+						<li><a href="../flu_info/flu_check.html">플루에 걸렸을까요?</a></li>
+						<li><a href="../flu_info/cure.html">예방과 치료</a></li>
+						<li><a href="../flu_info/important48.html">48시간이 중요해</a></li>
+						<li><a href="../flu_info/careful.html">더 조심해야할 사람</a></li>
+						<li><a href="../flu_info/truth.html">오해와 진실</a></li>
+						<li><a href="../flu_info/hsptl.html">가까운 병원찾기</a></li>
+					</ul>				
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nlag5ue8dn"></script>
+	<script type="text/javascript" src="../common/js/hsptl.js"></script>
+
+	<section>
+		<article class="topimg">
+			<div class="imgT imgT7">
+				<p>가까운 병원찾기</p>
+			</div>
+		</article>
+		<article class="sub">
+			<div class="s_menu">
+				<div class="wrap">
+					<ul>
+						<li><a href="../main/main.html">HOME</a></li>
+						<li><a href="flu_info.html">플루란 무엇인가요?</a></li>
+						<li><a href="flu_check.html">플루에 걸렸을까요?</a></li>
+						<li><a href="cure.html">예방과 치료</a></li>
+						<li><a href="important48.html">48시간이 중요해</a></li>
+						<li><a href="careful.html">더 조심해야할 사람</a></li>
+						<li><a href="truth.html">오해와 진실</a></li>
+						<li><a href="hsptl.html" class="on">가까운 병원찾기</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="locationbx pdtm2">
+				<div class="wrap">
+					<form onsubmit="javascript:return false;">
+						<fieldset>
+							<select name="Q0" id="Q0" title="시/도" onchange="javascript:district(this.value);">
+								<option value="">시/도</option>
+								<option value="서울특별시" selected>서울특별시</option>
+								<option value="경기도">경기도</option>
+								<option value="강원도">강원도</option>
+								<option value="경상남도">경상남도</option>
+								<option value="경상북도">경상북도</option>
+								<option value="광주광역시">광주광역시</option>
+								<option value="대구광역시">대구광역시</option>
+								<option value="대전광역시">대전광역시</option>
+								<option value="부산광역시">부산광역시</option>
+								<option value="울산광역시">울산광역시</option>
+								<option value="인천광역시">인천광역시</option>
+								<option value="전라남도">전라남도</option>
+								<option value="전라북도">전라북도</option>
+								<option value="충청남도">충청남도</option>
+								<option value="충청북도">충청북도</option>
+								<option value="제주특별자치도">제주특별자치도</option>
+								<option value="세종특별자치시">세종특별자치시</option>
+							</select>
+							<select name="Q1" id="Q1">
+								<option value="">시/군/구</option>
+							</select>
+							<input type="text" name="QN" id="QN" placeholder="병원이름 검색어" />
+							<button type="button" class="btn_search">검색</button>
+							<img src="../images/common/loadPrg.gif" id="loadPrg" style="display:none;" />
+						</fieldset>
+					</form>
+					<div class="clear cont">
+						<div class="mapbx" id="mapDiv"></div>
+						<div class="loclist">
+							<ul></ul>
+						</div>
+						<p>정부에서 운영하고 있는 공공데이터 포털<a href="https://www.data.go.kr/">(https://www.data.go.kr/)</a>에서 불러온 정보로써,<span> 지도상에 노출되지 않는 병원에서도 플루의 진단과 치료가 가능할 수 있습니다.</span></p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<div class="mBg"></div>
+		<footer>
+		<div class="footer section fp-auto-height" id="section2">
+			<div class="wrap">
+				<div class="footC">
+				  <p>본 웹사이트는 인플루엔자(독감) 질환에 대한 올바른 정보 제공을 목적으로 ㈜한국로슈에서 제작하였습니다. <span>아시아태평양 인플루엔자 연구소에서 내용을 감수하였습니다.</span></p>
+				</div>				
+			</div>		
+		</div>
+	</footer>
+</body>
+</html>

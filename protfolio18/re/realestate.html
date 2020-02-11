@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>이지스자산운용</title>
+		<link rel="stylesheet" href="../common/css/common.css">
+		<link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../common/css/mCustomScrollbar.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-3.3.0.min.js"></script>
+		<script type="text/javascript" src="../common/js/script.js"></script>
+		<script type="text/javascript" src="../common/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1><a href="../main/main.html">PAS Phygital Analytics Solution</a></h1>
+			<ul>
+				<li><a href="../main/main.html">HOME</a>
+					<ul>
+						<li><a href="#">데이터 소개</a></li>
+						<li><a href="../intro/company.html">회사소개</a></li>
+					</ul>
+				</li>
+				<li><a href="#">데이터</a>
+					<ul>
+						<li><a href="#">통계보기</a></li>
+						<li><a href="../re/realestate.html">지도보기</a></li>
+					</ul>				
+				</li>
+				<li><a href="../re/news.html">커뮤니티</a>
+					<ul>
+						<li><a href="../re/insight.html">인사이트</a></li>
+						<li><a href="../re/news.html">뉴스/이벤트</a></li>
+					</ul>				
+				</li>
+			</ul>
+			<div class="loginOn">
+				<a href="../login/login.html" class="login"><span>login</span></a>
+				<a href="#" class="login login2"><span>honggildong</span></a>
+				<div class="joinInfo">
+					<a href="#">회원정보수정</a>
+					<a href="#">로그아웃</a>
+				</div>
+			</div>
+		</header>	
+
+		<section class="contents recont">
+			<article class="lnb">
+				<div class="lnbBox">
+					<form>
+						<fieldset>
+							<ul>
+								<li><span class="txt">OverView</span></li>
+								<li class="on"><span class="txt">Analysis</span>
+									<div class="lnbOn">
+										<ul>
+											<li>
+												<span class="lnbT">데이터</span>
+												<select>
+													<option value="">선택</option>
+													<option value="">오피스</option>
+													<option value="">물류</option>
+													<option value="">호텔</option>
+													<option value="">리테일</option>
+												</select>
+											</li>
+											<li>
+												<span class="lnbT">자산유형</span>
+												<select>
+													<option value="">선택</option>
+													<option value="">CBD</option>
+													<option value="">GBD</option>
+													<option value="">YBD</option>
+													<option value="">마포,상암,송파,용산</option>
+												</select>
+											</li>
+											<li>
+												<span class="lnbT">지역설정</span>
+												<select>
+													<option value="">선택</option>
+													<option value="">임대</option>
+													<option value="">매매</option>
+													<option value="">현황</option>
+													<option value="">공급예정</option>
+												</select>
+											</li>
+											<li>
+												<span class="lnbT">유형</span>
+												<select>
+													<option value="">선택</option>
+												</select>
+											</li>
+											<li class="mdataBox">
+												<span class="lnbT">자산규모</span>
+												<div class="mem_ipt">
+													<input type="checkbox" name="dmata1" id="dmata1">
+													<label for="dmata1"><span>5000평 이하</span></label>
+												</div>
+												<div class="mem_ipt">
+													<input type="checkbox" name="dmata2" id="dmata2">
+													<label for="dmata2"><span>5000평 ~ 10,000평</span></label>
+												</div>
+												<div class="mem_ipt">
+													<input type="checkbox" name="dmata3" id="dmata3">
+													<label for="dmata3"><span>10,000평 ~ 15,000평</span></label>
+												</div>
+												<div class="mem_ipt">
+													<input type="checkbox" name="dmata4" id="dmata4">
+													<label for="dmata4"><span>15,000평 ~ 20,000평</span></label>
+												</div>
+												<div class="mem_ipt">
+													<input type="checkbox" name="dmata5" id="dmata5">
+													<label for="dmata5"><span>15,000평 ~ 20,000평</span></label>
+												</div>
+											</li>
+											<li>
+												<span class="lnbT">세부영역지정</span>
+												<select>
+													<option value="">선택</option>
+													<option value="">다각형</option>
+													<option value="">반경</option>
+												</select>
+											</li>
+										</ul>
+										<button type="button">재설정</button>
+										<button type="button" class="on">분석하기</button>
+									</div>
+								</li>
+							</ul>							
+						</fieldset>
+					</form>
+				</div>
+			</article>
+			<article class="mapcont">
+				<h2 class="title">결과보기</h2>
+				<div class="mapTop">
+					<div class="mapC">
+						<div class="mapP">
+							<span class="big">대형 (10,000평 이상)</span>
+							<span>중형 (10,000평 이하)</span>
+						</div>
+						<div class="mapimg">
+							<img src="../images/contents/map.png" alt="">
+						</div>
+					</div>
+					<div class="mapList">
+						<form>
+							<fieldset>
+								<table>
+								<caption>지도결과</caption>
+								<thead>
+									<tr>
+										<th>
+											<div class="mem_ipt">
+												<input type="checkbox" name="allcheck" id="allcheck" class="allcheck">
+												<label for="allcheck"><span></span></label>
+											</div>										
+										빌딩명</th>
+										<th>권역</th>
+										<th>연면적</th>
+										<th>규모</th>
+										<th>준공연도</th>
+										<th>자세히보기</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check1" id="check1">
+												<label for="check1"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울스퀘어</span></td>
+										<td>CBD-을지로</td>
+										<td>40,170py</td>
+										<td>B2/23F</td>
+										<td>1970</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check2" id="check2">
+												<label for="check2"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울파이낸스센터</span></td>
+										<td>CBD-남대문</td>
+										<td>36,102py</td>
+										<td>B8/30F</td>
+										<td>2001</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check3" id="check3">
+												<label for="check3"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울스퀘어</span></td>
+										<td>CBD-을지로</td>
+										<td>40,170py</td>
+										<td>B2/23F</td>
+										<td>1970</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check4" id="check4">
+												<label for="check4"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울파이낸스센터</span></td>
+										<td>CBD-남대문</td>
+										<td>36,102py</td>
+										<td>B8/30F</td>
+										<td>2001</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check5" id="check5">
+												<label for="check5"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울스퀘어</span></td>
+										<td>CBD-을지로</td>
+										<td>40,170py</td>
+										<td>B2/23F</td>
+										<td>1970</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check6" id="check6">
+												<label for="check6"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울파이낸스센터</span></td>
+										<td>CBD-남대문</td>
+										<td>36,102py</td>
+										<td>B8/30F</td>
+										<td>2001</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check7" id="check7">
+												<label for="check7"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울스퀘어</span></td>
+										<td>CBD-을지로</td>
+										<td>40,170py</td>
+										<td>B2/23F</td>
+										<td>1970</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check8" id="check8">
+												<label for="check8"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울파이낸스센터</span></td>
+										<td>CBD-남대문</td>
+										<td>36,102py</td>
+										<td>B8/30F</td>
+										<td>2001</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check9" id="check9">
+												<label for="check9"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울스퀘어</span></td>
+										<td>CBD-을지로</td>
+										<td>40,170py</td>
+										<td>B2/23F</td>
+										<td>1970</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="mem_ipt">
+												<input type="checkbox" name="check10" id="check10">
+												<label for="check10"><span></span></label>
+											</div>										
+										<span class="viewBtn">서울파이낸스센터</span></td>
+										<td>CBD-남대문</td>
+										<td>36,102py</td>
+										<td>B8/30F</td>
+										<td>2001</td>
+										<td>
+											<button type="button" class="viewBtn" onclick="javascript:popupbtn(this);">자세히보기</button>
+											<button type="button" class="delete" onclick="javascript:deletebtn(this);">삭제하기</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>								
+							</fieldset>
+						</form>
+					</div>					
+				</div>
+				<div class="mycheck">
+					<h3>내가 선택한 빌딩</h3>
+					<div class="checkList">
+						<table>
+							<caption></caption>
+							<thead>
+								<tr>
+									<th>빌딩명</th>
+									<th>권역</th>
+									<th>연면적</th>
+									<th>규모</th>
+									<th>준공연도</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+						</table>
+					</div>
+					<div class="popupBox">
+						<button type="button">닫기</button>
+						<div class="popup mCustomScrollbar">
+							<div class="popupA">
+								<h3>서울스퀘어</h3>
+								<div class="tabt">
+									<div class="tabl">
+										<h4>Location</h4>
+										<div class="bod">
+											<table>
+												<caption>해당이미지</caption>
+												<tbody>
+													<tr>
+														<th>권역</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>세부권역</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>도로명주소</th>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>									
+										</div>
+										<h4>Leasing</h4>
+										<div class="bod">
+											<table>
+												<caption></caption>
+												<tbody>
+													<tr>
+														<th>주요임차인</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>기준층 보증금</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>기준층 임대료</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>기준층 관리비</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>공실률</th>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="tabr">
+										<h4>Property</h4>
+										<div class="bod">
+											<table>
+												<caption></caption>
+												<tbody>
+													<tr>
+														<th>대지면적</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>연면적</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>용도지역/지구</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>층수</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>준공연도</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>전용률</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>건폐율</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>승강기</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>주차대수</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>비고</th>
+														<td></td>
+													</tr>
+													<tr>
+														<th>소유주</th>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>	
+										</div>
+									</div>								
+								</div>
+								<div class="trans">
+									<h4>Transaction</h4>
+									<div class="bod">
+										<table>
+											<caption></caption>
+											<thead>
+												<tr>
+													<th>거래일자</th>
+													<th>거래가격</th>
+													<th>연면적당가격</th>
+													<th>매도인(내부용)</th>
+													<th>매수인(내부용)</th>
+													<th>비고</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>								
+									</div>
+								</div>
+								<div class="image">
+									<h4>image</h4>
+									<div class="swiper-container2 gallery-top">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="../images/contents/popupimg.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg2.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg3.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg2.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg3.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg2.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg3.png" alt=""></li>
+										</ul>								
+									</div>
+									<div class="swiper-container2 gallery-thumbs">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide"><img src="../images/contents/popupimg.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg2.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg3.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg2.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg3.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg2.png" alt=""></li>
+											<li class="swiper-slide"><img src="../images/contents/popupimg3.png" alt=""></li>
+										</ul>
+										<div class="img-button-prev1 Btn"></div>
+										<div class="img-button-next1 Btn"></div>
+									</div>
+								 </div>							
+							</div>
+						</div>						
+					</div>
+				</div>
+			</article>
+		</section>
+		<div class="bg"></div>
+				<footer>
+			<div class="wrap">
+				<div class="fleft">
+					<p class="addr">서울특별시 영등포구 여의공원로 115 (여의도동 10번지) 세우빌딩 14층</p>
+					<ul>
+						<li>TEL 02-6959-3100</li>
+						<li>FAX 02-780-7301</li>
+						<li>개인투자자 문의/상담 : 02-6959-7200</li>
+					</ul>
+					<p class="copy">COPYRIGHT 2019  IGIS ASSET MANAGEMENT. ALL RIGHTS RESERVED.</p>					
+				</div>
+				<div class="fright">
+					<a href="#">개인정보 처리방침</a>
+					<a href="#">사이트 이용 약관</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>	

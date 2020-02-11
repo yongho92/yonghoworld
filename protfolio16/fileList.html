@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>마이셀럽 MOBILE PUBLISHING LIST &amp; GUIDE</title>
+<!-- <link rel="stylesheet" href="common/css/common.css" /> -->
+<style type="text/css">
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html, body{margin:0;padding:0;width:100%;font-family:'Noto Sans KR', Tahoma, Geneva, sans-serif;font-size:13px;line-height:1.5;color:#111;}
+header{position:relative;width:100%;padding:25px 0;margin:0;background:#333;}
+header h1{float:none;clear:both;text-align:center;padding:0;margin:0;font-size:2em;color:#fff;font-weight:700}
+header .logo{position:absolute;top:40%;right:15px;text-align:right}
+header .logo img{width:70%}
+footer{position:fixed;left:0;bottom:0;width:100%;}
+footer .goTop{position:fixed;right:0;bottom:66px;display:block;text-align:center;;padding:1px 3px;text-decoration:none;background:#666666;color:#fff;}
+footer .footBg{overflow:hidden;padding:10px 0 10px 10px;background:#eeeeee;border-top:1px solid#666666;}
+footer .progress,
+footer .nameList{padding:5px 0 0;margin:0;}
+footer .progress li,
+footer .nameList li{display:inline;padding:0;margin:0 10px 0 0;color:blue;}
+footer .nameList{display:block;}
+footer .tempMenu{float:right;white-space:nowrap;padding:0;margin:0;list-style:none;}
+footer .tempMenu li{display:inline;padding:0;margin:0 10px;}
+footer .info{padding:0;margin:0;list-style:none;}
+nav ul{padding:5px 0;text-align:center;background:#eee}
+nav ul:after{content:"";display:block;clear:both}
+nav ul li{display:inline-block;}
+nav ul li a{display:inline-block;margin:0 10px;font-size:1.25em}
+nav ul li a strong{color:#d90000;}
+.stepInfo{clear:both;padding:0;margin:5px 0;text-align:right;}
+.stepInfo li{display:inline;margin-right:10px;font-size:0.9em;}
+.stepInfo li span{display:inline-block;width:35px;height:13px;margin-right:3px;vertical-align:middle}
+.listTbl{width:calc(100% - 1px);padding:0;margin:0;border:0;border-bottom:1px solid#e7e7e7;border-collapse:collapse;}
+.listTbl thead th{height:26px;font-weight:normal;border:1px solid #e7e7e7;border-bottom-color:#333;white-space:nowrap;}
+.listTbl tbody th{height:24px;padding:0 10px;text-align:left;border:1px solid#e7e7e7;background:#eeeeee;}
+.listTbl tbody th strong{color:#d90000}
+.listTbl tbody td{height:24px;padding:0 10px;border:1px solid #e7e7e7;border-bottom:0;color:#111;}
+.listTbl th.depth2{background:#fceff7;border-left:0}
+.listTbl td.depth2{white-space:nowrap;text-align:left;background:#fceff7;border-top-color:#e7e7e7}
+.listTbl th.depth3{background:#f2fcef;}
+.listTbl td.depth3{white-space:nowrap;text-align:left;background:#f2fcef;border-top-color:#e7e7e7;}
+.listTbl th.depth4{background:#8aefeffccdd3;}
+.listTbl td.depth4{white-space:nowrap;text-align:left;background:#efeffc;border-top-color:#e7e7e7;}
+.listTbl th.depth5{background:#fcfcef;}
+.listTbl td.depth5{white-space:nowrap;text-align:left;background:#fcfcef;border-top-color:#e7e7e7;}
+.listTbl th.popup{background:#effafc;}
+.listTbl td.popup{white-space:nowrap;text-align:left;background:#effafc;border-top-color:#e7e7e7;}
+.listTbl td.link{white-space:nowrap;text-align:left;}
+.listTbl td.link a{white-space:nowrap;}
+.listTbl td.psd,.listTbl td.endHtml,
+.listTbl td.check1,
+.listTbl td.check2,
+.listTbl td.end,
+.listTbl td.name{text-align:center;white-space:nowrap;}
+.listTbl th.name,.listTbl td.name{border-right:0 !important;}
+.listTbl tr:hover td{background:#d896aa !important;color:#ffffff;}
+.del,
+.listTbl tr.del td{background:red;}
+.develop,
+.listTbl tr.develop td{background:#f1f1f1;color:#a7a7a7}
+.listTbl tr.develop td.cmt{color:#515151}
+.step1,
+.listTbl tr td.step1{background:#999999 !important;color:#ffffff !important;}
+.step2,
+.listTbl tr td.step2{background:#000000 !important;color:#ffffff !important;}
+section{padding-bottom:70px;}
+</style>
+<script type="text/javascript" src="common/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	 var total = $($('.depth2')).length - 1; /* 총 갯수 */
+	 $('.numTotal span').append(total);
+
+	 var psd = $($('.psd span:contains(O)')).length; /* psd 완료 */
+	 $('.numPsd span').append(psd);
+
+	 var endHtml = $($('.endHtml.step2')).length; /* html 완료 */
+	 $('.numHtml span').append(endHtml);
+
+	 var end = $($('.end.step2')).length;  /* 최종완료 */
+	 $('.numEnd span').append(end);
+
+	 var min = $($('.name span:contains(민경미)')).length; /* 담당자:민경미 지정수*/
+	 $('.numMin span.tat').append(min);
+	 var minE = $($('.name span:contains(민경미)').parents().children('.endHtml.step2')).length; /* 담당자:민경미 완료 */
+	 $('.numMin span.end').append(minE);
+
+	 var Song = $($('.name span:contains(송수인)')).length; /* 담당자:송수인 지정수*/
+	 $('.numSong span.tat').append(Song);
+	 var SongE = $($('.name span:contains(송수인)').parents().children('.endHtml.step2')).length; /* 담당자:송수인 완료 */
+	 $('.numSong span.end').append(SongE);
+
+	 var total2= min + Song; /* 합계 */
+	 $('.total2 span.t2').append(total2);
+	 var total3= minE + SongE; /* 합계 */
+	 $('.total2 span.t3').append(total3);
+
+
+		$('.link').each(function(){
+			var linkText = $($(this).children('a')).attr('href');
+			var text = $($(this).children('a').attr('target', '_blank')).text(linkText);
+		});
+});
+</script>
+</head>
+<body>
+
+<!-- header -->
+<header>
+	<h1>마이셀럽 APP PUBLISHING LIST &amp; GUIDE</h1>
+	<p class="logo"><img src="_temp/logo-white.png" alt="TENDENCY" /></p>
+</header>
+<!-- //header -->
+
+<!-- footer -->
+<footer>
+	<a href="#" class="goTop">▲ Top</a>
+	<div class="footBg">
+		<ul class="tempMenu">
+			<li><a href="_temp/layout.html" target="_blank">LAYOUT</a></li>
+			<!-- <li><a href="_temp/list.html" target="_blank">LIST</a></li>
+			<li><a href="_temp/table.html" target="_blank">TABLE</a></li>
+			<li><a href="_temp/contents.html" target="_blank">CONTENTS</a></li> -->
+		</ul>
+		<ul class="info">
+			<li>프로젝트명 : 마이셀럽 모바일웹</li>
+		</ul>
+		<ul class="progress">
+			<!-- <li class="numSol">솔루션 : <span></span></li>
+			<li class="numDel">삭제 : <span></span></li> -->
+			<li class="numPsd">PSD : <span></span></li>
+			<li class="numHtml">HTML : <span></span></li>
+			<!-- <li class="numTotal">total : <span class="tat"></span>페이지 중 html완료 <span class="end"></span>페이지</li> -->
+			<!-- <li class="numCheck2">기획검수 : <span></span></li> -->
+			<li class="numEnd">반응형 완료:<span></span></li>
+			<!-- <li class="total2" style="color:red;">합계:<span class="t3"></span>/<span class="t2"></span></li> -->
+		</ul>
+		<!-- <ul class="nameList">
+			<li class="numMin">민경미:<span class="end"></span>/<span class="tat"></span></li>
+			<li class="total2">합계:<span class="t3"></span>/<span class="t2"></span></li>
+		</ul> -->
+	</div>
+</footer>
+<!-- //footer -->
+<!-- container -->
+<section>
+	<ul class="stepInfo">
+		<li><span class="step1"></span>진행중</li>
+		<li><span class="step2"></span>반응형완료</li>
+		<!-- <li><span class="del"></span>삭제</li>
+		<li><span class="develop"></span>솔루션</li> -->
+	</ul>
+	<table class="listTbl" summary="퍼블리싱 파일 리스트입니다.">
+		<!-- <caption>퍼블리싱 파일 목록</caption> -->
+		<colgroup>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col width="40" />
+			<col width="50" />
+			<col width="50" />
+			<col width="70" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col" class="depth2">1DEPTH</th>
+				<th scope="col" class="depth3">2DEPTH</th>
+				<th scope="col" class="depth4">3DEPTH</th>
+				<th scope="col" class="depth5">TAB</th>
+				<th scope="col" class="popup">POPUP</th>
+				<th scope="col">비고</th>
+				<th scope="col">화면ID(링크)</th>
+				<th scope="col">PSD</th>
+				<th scope="col">HTML</th>
+				<th scope="col">완료</th>
+				<th scope="col" class="name">담당자</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="col" id="dpeth4" class="last" colspan="11"> 메인</th>
+			</tr>
+			<tr>
+				<td class="depth2">메인</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="main/main.html" target="_blank">main/main.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span>곽용호</span></td>
+			</tr>
+			<tr>
+				<th scope="col" id="dpeth4" class="last" colspan="11">셀럽리스트</th>
+			</tr>
+			<tr>
+				<td class="depth2">셀럽리스트</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="celebList/list.html" target="_blank">celebList/list.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span>곽용호</span></td>
+			</tr>
+			<tr>
+				<td class="depth2">셀럽리스트 VIEW</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="celebList/list_view.html" target="_blank">celebList/list_view.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span>곽용호</span></td>
+			</tr>
+			<tr>
+				<td class="depth2">영상요청</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="celebList/video.html" target="_blank">celebList/video.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span>곽용호</span></td>
+			</tr>
+			<tr>
+				<th scope="col" id="dpeth4" class="last" colspan="11">로그인</th>
+			</tr>
+			<tr>
+				<td class="depth2">로그인</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/login.html" target="_blank">join/login.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">비밀번호 찾기</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/pw.html" target="_blank">join/pw.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<th scope="col" id="dpeth4" class="last" colspan="11">회원가입 - 사용자</th>
+			</tr>
+			<tr>
+				<td class="depth2">사용자 회원가입1</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/user_join.html" target="_blank">join/user_join.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">사용자 회원가입2</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/user_join2.html" target="_blank">join/user_join2.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<th scope="col" id="dpeth4" class="last" colspan="11">회원가입 - 셀럽</th>
+			</tr>
+			<tr>
+				<td class="depth2">셀럽 회원가입1</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/celeb_join.html" target="_blank">join/celeb_join.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">셀럽 회원가입2</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/celeb_join2.html" target="_blank">join/celeb_join2.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">셀럽 회원가입3</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/celeb_join3.html" target="_blank">join/celeb_join3.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">셀럽 회원가입4</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/celeb_join4.html" target="_blank">join/celeb_join4.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">셀럽 회원가입 1,2,3 통합</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="join/celeb_join5.html" target="_blank">join/celeb_join5.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<th scope="col" id="dpeth4" class="last" colspan="11">마이페이지</th>
+			</tr>
+			<tr>
+				<td class="depth2">마이페이지</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/mypage.html" target="_blank">mypage/mypage.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">공유링크</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/share_link.html" target="_blank">mypage/share_link.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">예약리스트</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/reservation.html" target="_blank">mypage/reservation.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">예약리스트 상세페이지</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/reservation_view.html" target="_blank">mypage/reservation_view.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">프로필 / 계정관리 - 웰컴영상</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/welcome_video.html" target="_blank">mypage/welcome_video.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">프로필 / 계정관리 - 가격설정</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/price.html" target="_blank">mypage/price.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">프로필 / 계정관리 - 프로필</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/profile.html" target="_blank">mypage/profile.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">수익금관리</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/proceeds.html" target="_blank">mypage/proceeds.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">초대 프로그램</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/invite_program.html" target="_blank">mypage/invite_program.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">고객센터 - faq</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/faq.html" target="_blank">mypage/faq.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+			<tr>
+				<td class="depth2">고객센터 - 문의</td>
+				<td class="depth3"></td>
+				<td class="depth4"></td>
+				<td class="depth5"></td>
+				<td class="popup"></td>
+				<td></td>
+				<td class="link"><a href="mypage/contact.html" target="_blank">mypage/contact.html</a></td>
+				<td class="psd"><span></span></td>
+				<td class="endHtml step0"></td>
+				<td class="end step0"></td>
+				<td class="name"><span></span></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<!-- //container -->
+
+</body>
+</html>

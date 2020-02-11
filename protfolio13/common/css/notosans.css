@@ -1,0 +1,73 @@
+@CHARSET "utf-8";
+
+/*@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight:100;
+	src: url(../fonts/NotoSansCJKkr-Thin.woff2) format('woff2'),
+		 url(../fonts/NotoSansCJKkr-Thin.woff) format('woff'),
+		 url(../fonts/NotoSansCJKkr-Thin.otf) format('opentype');
+}
+
+
+@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight:400;
+	src: url(../fonts/NotoSansCJKkr-Regular.woff2) format('woff2'),
+		 url(../fonts/NotoSansCJKkr-Regular.woff) format('woff'),
+		 url(../fonts/NotoSansCJKkr-Regular.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight:700;
+	src: url(../fonts/NotoSansCJKkr-Bold.woff2) format('woff2'),
+		 url(../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
+		 url(../fonts/NotoSansCJKkr-Bold.otf) format('opentype');
+}*/
+
+@font-face{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight:300;
+	src: url(../fonts/Montserrat-Light.woff2) format('woff2'),
+		 url(../fonts/Montserrat-Light.woff) format('woff'),
+		 url(../fonts/Montserrat-Light.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight:600;
+	src: url(../fonts/Montserrat-SemiBold.woff2) format('woff2'),
+		 url(../fonts/Montserrat-SemiBold.woff) format('woff'),
+		 url(../fonts/Montserrat-SemiBold.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Mont HeavyDEMO';
+	font-style: normal;
+	font-weight:600;
+	src: url(../fonts/Mont-HeavyDEMO.woff2) format('woff2'),
+		 url(../fonts/Mont-HeavyDEMO.woff) format('woff'),
+		 url(../fonts/Mont-HeavyDEMO.otf) format('opentype');
+}
+
+@font-face{
+	font-family: 'Mont ExtraLight';
+	font-style: normal;
+	src: url(../fonts/Mont-ExtraLightDEMO.woff2) format('woff2'),
+		 url(../fonts/Mont-ExtraLightDEMO.woff) format('woff'),
+		 url(../fonts/Mont-ExtraLightDEMO.otf) format('opentype');
+}
+
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 400;
+ src: url(../fonts/NanumSquareR.eot);
+ src: url(../fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumSquareR.woff) format('woff'),
+      url(../fonts/NanumSquareR.ttf) format('truetype');
+}
