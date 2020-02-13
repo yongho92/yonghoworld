@@ -174,22 +174,7 @@
 						<img src="../images/contents/map.png" alt="">
 					</div>
 					<div class="loclist">
-						<ul>
-							<li>
-								<dl>
-									<dt>미즈메디의원</dt>
-									<dd>서울특별시 강남구 도곡로 452 (대치동, <span>미즈메디병원)</span></dd>
-								</dl>
-								<span class="num">02-1234-5678</span>
-							</li>
-							<li>
-								<dl>
-									<dt>미즈메디의원</dt>
-									<dd>서울특별시 강남구 도곡로 452 (대치동, <span>미즈메디병원)</span></dd>
-								</dl>
-								<span class="num">02-1234-5678</span>
-							</li>
-						</ul>
+						<ul></ul>
 					</div>
 					<button type="button" class="btn" id="load">더보기</button>	
 					<p>정부에서 운영하고 있는 공공데이터 포털<a href="https://www.data.go.kr/">(https://www.data.go.kr/)</a>에서 불러온 정보로써,<span> 지도상에 노출되지 않는 병원에서도 플루의 진단과 치료가 가능할 수 있습니다.</span></p>

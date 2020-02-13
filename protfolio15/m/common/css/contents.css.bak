@@ -150,7 +150,7 @@ section{}
 .locationbx .cont .mapbx img{width:100%;}
 .locationbx .cont .loclist{margin-top:2vw; padding:4vw 4vw 0 4vw;background:#fff;color:#555;}
 .locationbx .cont .loclist ul{}
-.locationbx .cont .loclist ul li{padding:4vw 0; border-bottom:1px solid #ddd;}
+.locationbx .cont .loclist ul li{padding:4vw 0; border-bottom:1px solid #ddd; display:none;}
 .locationbx .cont .loclist ul li:first-child{padding:0 0 4vw 0;}
 .locationbx .cont .loclist ul li dl{}
 .locationbx .cont .loclist ul li dl dt{font-size:4.26vw; font-weight:500; color:#111;}
