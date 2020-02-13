@@ -1,0 +1,50 @@
+<? include ("../inc/header.html"); ?>
+
+
+	<div id="container">
+		<div class="top_c top_c2">
+			<div class="topImg topImg0 topImg9">
+				<dl>
+					<dt>가맹문의</dt>
+					<dd></dd>
+				</dl>
+			</div>
+			<div class="subm">
+				<ul class="s_depth1">
+					<li><a href="../main/main.html"><img src="../images/common/m_home.png" alt="메인이동" width="13" height="12"></a></li>
+					<li><a href="javascript:;" class="on"><span>가맹문의</span></a>
+						<ul class="s_depth2">
+							<li><a href="../intro/intro.html">SLP소개</a></li>
+							<li><a href="../culum/culum_intro.html">커리큘럼</a></li>
+							<li><a href="../admission/admission.html">입학안내</a></li>
+							<li><a href="../news/notice.html">SLP소식</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;" class="on"><span>SLP 가맹 사업 소개</span></a>
+						<ul class="s_depth2">
+							<li><a href="intro.html">서강대학교 SLP</a></li>
+							<li><a href="athenaeum.html">지역학당 안내</a></li>
+						</ul>					
+					</li>
+				</ul>
+			</div>		
+		</div>
+		<div class="group fi_cont">
+			<div class="contents">
+				<div class="fi_box">
+					<div class="fi_img">
+						<img src="../images/contents/fi_img1.png" alt="">
+					</div>
+					<div class="fi_txt">
+						<h4 class="s_title s_title2">SLP 가맹 사업 소개</h4>
+						<p>SLP(Sogang Language Program)는 서강대학교의 교육이념을 토대로 어린이와 청소년의 올바른 영어교육을 위해<span>1994년 서강대학교가 설립한 영어교육기관입니다.</span>설립 이래 본사 영어연구소에서 지속적으로 프로그램을 개발, 개정하며 우리나라 어린이와 청소년들을 위한 올바른<span>영어교육에 앞장서고 있습니다. SLP는 1995년 강남, 서초, 목동, 노원, 평촌, 대전 6개 학당 개원을 시작으로 현재</span>전국 59개 지역에서 운영되고 있습니다.</p>
+						<p><span>2018년 기준으로 추산된 자료에 의하면 2003년부터 SLP에서 3년 이상 수강한 학생은 27,146명이 넘습니다. </span>설립 이후25년간 SLP가 꾸준히 인정받을 수 있었던 이유는 개교 당시부터 특화된 영어교육으로 정평이 나 있던<span>서강대학교에서 개발한 커리큘럼을 기반으로, 우리 학생들의 특성과 요구에 맞게 전문적으로 개정 및 관리하는</span>교육을 지속했기 때문입니다.</p>
+						<p>25년의 시간과 SLP를 졸업한 학생들은 SLP의 교육이 옳았다는 것을 증명합니다.<span>서강대학교의 교육 철학을 바탕으로 올바른 영어교육을 통해 진정한 세계적 인재를 양성하고자 하는 분을</span>SLP 원장님으로 모십니다. </p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+
+<? include ("../inc/footer.html"); ?>

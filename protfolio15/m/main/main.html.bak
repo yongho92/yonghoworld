@@ -1,48 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<title>한국로슈</title>
-	<link rel="stylesheet" type="text/css" href="../common/css/common.css" />
-	<link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="../common/css/fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="../common/css/jquery.mCustomScrollbar.css">
-	<script type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="../common/js/fullpage307.js"></script>
-	<script type="text/javascript" src="../common/js/swiper.min.js"></script>
-	<script type="text/javascript" src="../common/js/main.js"></script>
-	<script type="text/javascript" src="../common/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript" src="../common/js/script.js"></script>
-
-</head>
-<body class="main_a">
-	<!-- <p class="iuo">Interanal Use Only</p> -->
-	<header>
-		<div class="head">
-			<a href="#" class="menu">메뉴</a>
-			<h1><a href="../main/main.html">로고</a></h1>
-		</div>
-		<div class="menu_on">
-			<div class="menuD">
-				<div class="menuT">
-					<button type="button">닫기</button>
-					<ul>
-						<li><a href="../main/main.html">HOME</a></li>
-						<li><a href="../flu_info/flu_info.html">플루란 무엇인가요?</a></li>
-						<li><a href="../flu_info/flu_check.html">플루에 걸렸을까요?</a></li>
-						<li><a href="../flu_info/cure.html">예방과 치료</a></li>
-						<li><a href="../flu_info/important48.html">48시간이 중요해</a></li>
-						<li><a href="../flu_info/careful.html">더 조심해야할 사람</a></li>
-						<li><a href="../flu_info/truth.html">오해와 진실</a></li>
-						<li><a href="../flu_info/hsptl.html">가까운 병원찾기</a></li>
-					</ul>				
-				</div>
-			</div>
-		</div>
-	</header>
+<? include ("../inc/header.html"); ?>
 
 	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nlag5ue8dn"></script>
 	<script type="text/javascript" src="../../common/js/hsptl.js"></script>
@@ -186,13 +142,7 @@
 	</section>	
 	<div class="mBg"></div>
 
-	<footer class="footer section fp-auto-height" id="section2">
-		<div class="wrap">
-			<div class="footC">
-			  <p>본 웹사이트는 인플루엔자(독감) 질환에 대한 올바른 정보 제공을 목적으로 ㈜한국로슈에서 제작하였습니다. <span>아시아태평양 인플루엔자 연구소에서 내용을 감수하였습니다.</span></p>
-			</div>				
-		</div>
-	</footer>
+<? include ("../inc/footer.html"); ?>
 
 <script type="text/javascript">
     $('a[href^="#pop_"]').click(openModal);

@@ -1,0 +1,109 @@
+<? include ("../inc/header.html"); ?>
+
+
+	<div id="container">
+		<div class="top_c">
+			<div class="topImg topImg4">
+				<dl>
+					<dt>온라인 학습</dt>
+					<dd>SLP온라인 학습은 Infusion Learning의 커리큘럼과 연계되어<span>학습 성과를 극대화할 수 있도록 개발된 맞춤 프로그램입니다</span></dd>
+				</dl>
+			</div>
+			<div class="subm">
+				<ul class="s_depth1">
+					<li><a href="../main/main.html"><img src="../images/common/m_home.png" alt="메인이동" width="13" height="12"></a></li>
+					<li><a href="javascript:;" class="on"><span>커리큘럼</span></a>
+						<ul class="s_depth2">
+							<li><a href="../intro/intro.html">SLP소개</a></li>
+							<li><a href="../culum/culum_intro.html">커리큘럼</a></li>
+							<li><a href="../admission/admission.html">입학안내</a></li>
+							<li><a href="../news/notice.html">SLP소식</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;" class="on"><span>온라인학습</span></a>
+						<ul class="s_depth2">
+							<li><a href="infusion.html">Infusion Learning<sup>Ⓡ</sup></a></li>
+							<li><a href="culum_intro.html">커리큘럼 로드맵</a></li>
+							<li><a href="concentration_aj.html">집중과정</a></li>
+							<li><a href="Immersion_rb.html">몰입과정</a></li>
+							<li><a href="junior_jip.html">주니어과정</a></li>
+							<li><a href="alps_intro.html">온라인학습</a></li>
+						</ul>					
+					</li>
+				</ul>
+			</div>		
+		</div>
+		<div class="group online_group">
+			<div class="contents">
+				<div class="tab tab2">
+					<ul>
+						<li><a href="alps_intro.html">이러닝</a></li>
+						<li><a href="read_program.html">독서프로그램</a></li>
+						<li><a href="slp_english.html" class="on">화상영어</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="online_bg online_bg2">
+				<div class="contents">
+					<div class="onl_box onl_box2">
+						<dl>
+							<dt>망고아이 Mango-i</dt>
+							<dd>Mango-i(망고아이)는 가정에서 원어민 선생님과의<span>실시간 화상 수업을 통해 Speaking 실력을</span>향상시킬 수 있는1:1 맞춤형 프로그램입니다. </dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="group online">
+			<div class="contents contents3">
+				<div class="onl_list">
+					<h4 class="s_title">화상영어 수강 절차</h4>
+					<ul>
+						<li>회원가입</li>
+						<li>웹캠/헤드셋 구성</li>
+						<li>프로그램 설치</li>
+						<li>레벨테스트</li>
+						<li class="right">학사상담</li>
+						<li class="right">수강신청</li>
+						<li class="right">수강결제</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="group online bgef mdt100">
+			<div class="contents contents3 mdb100">
+				<div class="onl_cul">
+					<h4 class="s_title">화상영어 커리큘럼</h4>
+					<ul class="com_box">
+						<li>
+							<dl>
+								<dt>파닉스 &amp; 기초 스피킹</dt>
+								<dd>영어를 처음 접하는<span>수강자 프로그램 및 <strong class="co1">다양한</strong></span><strong class="co1">멀티미디어 활용</strong> 수업입니다.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>SLP보충심화</dt>
+								<dd>SLP 학당에서 사용하는 교재로<span>화상영어 원어민 선생님과 함께 보충,</span>심화 학습을 하는 과정입니다.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>주제토론</dt>
+								<dd>다양한 주제에 대해 <strong class="co1">영어로</strong><span><strong class="co1">사고하고 표현</strong>하는</span>과정입니다.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>프리토킹</dt>
+								<dd><strong class="co1">일상적 대화와 관용구</strong> 등을<span>익혀 표현의 폭을 넓힐 수 있는</span>프로그램입니다.</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<? include ("../inc/footer.html"); ?>
